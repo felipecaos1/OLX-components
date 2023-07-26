@@ -1,0 +1,3221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- CSS local -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- FUNTE ROBOTO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FUENTE ROBOTO CODENSE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- vinculación de bootstrap  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- !JQUERY -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  </head>
+
+  <body style="background-color: #ebedee">
+    <!-- Componente 1 -->
+    <header>
+      <div class="container-fluid px-4 py-3" style="background-color: #fff">
+        <div class="row mx-auto align-items-center">
+          <div class="col-12 col-md-auto text-center">
+            <img
+              src="./assets/img/olx-logo-dark.svg"
+              alt=""
+              width="58px"
+              height="58px"
+            />
+          </div>
+          <div
+            class="col-12 col-md-7 col-xl-9 d-flex text-center"
+            style="gap: 1rem"
+          >
+            <div
+              style="width: 30%"
+              class="d-flex align-items-center select-ubicacion"
+            >
+              <svg
+                width="24px"
+                height="24px"
+                viewBox="0 0 1024 1024"
+                data-aut-id="icon"
+                class=""
+                fill-rule="evenodd"
+              >
+                <path
+                  class="rui-2lrc2"
+                  d="M448 725.333c-152.917 0-277.333-124.416-277.333-277.333s124.416-277.333 277.333-277.333c152.917 0 277.333 124.416 277.333 277.333s-124.416 277.333-277.333 277.333v0zM884.437 824.107v0.021l-151.915-151.936c48.768-61.781 78.144-139.541 78.144-224.192 0-199.979-162.688-362.667-362.667-362.667s-362.667 162.688-362.667 362.667c0 199.979 162.688 362.667 362.667 362.667 84.629 0 162.411-29.376 224.171-78.144l206.144 206.144h60.352v-60.331l-54.229-54.229z"
+                ></path>
+              </svg>
+              <select
+                class="form-select f-Roboto"
+                aria-label=".form-select-lg example"
+              >
+                <option selected>Ubicación</option>
+                <option value="1">Colombia</option>
+                <option value="2">Two</option>
+              </select>
+            </div>
+            <div style="width: 70%" class="buscador">
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control f-Roboto"
+                  placeholder="Encuentra automóviles"
+                  aria-label="Encuentra automóviles"
+                  aria-describedby="button-addon2"
+                />
+                <button class="btn" type="button" id="button-addon2">
+                  <svg
+                    width="34px"
+                    height="24px"
+                    viewBox="0 0 1024 1024"
+                    data-aut-id="icon"
+                    class=""
+                    fill-rule="evenodd"
+                  >
+                    <path
+                      fill="#fff"
+                      d="M448 725.333c-152.917 0-277.333-124.416-277.333-277.333s124.416-277.333 277.333-277.333c152.917 0 277.333 124.416 277.333 277.333s-124.416 277.333-277.333 277.333v0zM884.437 824.107v0.021l-151.915-151.936c48.768-61.781 78.144-139.541 78.144-224.192 0-199.979-162.688-362.667-362.667-362.667s-362.667 162.688-362.667 362.667c0 199.979 162.688 362.667 362.667 362.667 84.629 0 162.411-29.376 224.171-78.144l206.144 206.144h60.352v-60.331l-54.229-54.229z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-auto text-center">
+            <div
+              class="d-flex justify-content-center align-items-center"
+              style="gap: 1rem"
+            >
+              <div>
+                <button
+                  type="button"
+                  class="btn f-Roboto"
+                  style="background-color: #072f35; color: #fff"
+                >
+                  Ingresar
+                </button>
+              </div>
+              <div>
+                <a href="" class="ancla-vender">
+                  <svg width="104" height="48" viewBox="0 0 1603 768">
+                    <g>
+                      <path
+                        fill="#fff"
+                        d="M434.442 16.944h718.82c202.72 0 367.057 164.337 367.057 367.058s-164.337 367.057-367.057 367.057h-718.82c-202.721 0-367.058-164.337-367.058-367.058s164.337-367.058 367.058-367.058z"
+                      ></path>
+                      <path
+                        fill="#3be9de"
+                        d="M427.241 669.489c-80.917 0-158.59-25.926-218.705-73.004l-0.016-0.014c-69.113-54.119-108.754-131.557-108.754-212.474 0-41.070 9.776-80.712 29.081-117.797 25.058-48.139 64.933-89.278 115.333-118.966l-52.379-67.581c-64.73 38.122-115.955 90.98-148.159 152.845-24.842 47.745-37.441 98.726-37.441 151.499 0 104.027 50.962 203.61 139.799 273.175h0.016c77.312 60.535 177.193 93.887 281.22 93.887h299.699l25.138-40.783-25.138-40.783h-299.698z"
+                      ></path>
+                      <path
+                        fill="#192b58"
+                        d="M1318.522 38.596v0c-45.72-14.369-93.752-21.658-142.762-21.658h-748.511c-84.346 0-165.764 21.683-235.441 62.713l3.118 51.726 49.245 15.865c54.16-31.895 117.452-48.739 183.073-48.739h748.511c38.159 0 75.52 5.657 111.029 16.829v0c44.91 14.111 86.594 37.205 120.526 66.792l66.163-57.68c-43.616-38.010-97.197-67.703-154.957-85.852z"
+                      ></path>
+                      <path
+                        fill="#3c66ff"
+                        d="M1473.479 124.453l-55.855 9.91-10.307 47.76c61.844 53.929 95.92 125.617 95.92 201.88 0 25.235-3.772 50.26-11.214 74.363-38.348 124.311-168.398 211.129-316.262 211.129h-448.812l25.121 40.783-25.121 40.783h448.812c190.107 0 357.303-111.638 406.613-271.498 9.572-31.009 14.423-63.162 14.423-95.559 0-98.044-43.805-190.216-123.317-259.551z"
+                      ></path>
+                    </g>
+                  </svg>
+                  <div class="btn-vender">
+                    <span class="d-flex me-1">
+                      <svg
+                        width="16px"
+                        height="16px"
+                        viewBox="0 0 1024 1024"
+                        data-aut-id="icon"
+                        class=""
+                        fill-rule="evenodd"
+                      >
+                        <path
+                          class="rui-l7uK1"
+                          d="M414.898 123.739v291.218h-291.218l-97.014 97.014 97.014 97.131h291.218v291.16l97.073 97.071 97.073-97.071v-291.16h291.16l97.131-97.131-97.131-97.014h-291.16v-291.218l-97.073-97.073z"
+                        ></path>
+                      </svg>
+                    </span>
+                    <span class="f-Roboto">Vender</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Fin componente 1 -->
+
+    <!-- Componente 2 -->
+    <div class="container-fluid">
+      <div class="row px-2 px-md-5 pt-5 align-items-center">
+        <div class="col-md-4 pe-4">
+          <div
+            class="ps-2"
+            style="border: solid 0 #072f35; border-left-width: 7px"
+          >
+            <h1
+              class="f-Roboto"
+              style="
+                color: #072f35;
+                letter-spacing: -1px;
+                font-weight: 900;
+                line-height: 2.3rem;
+              "
+            >
+              BIENVENIDO<br />A ESFERA
+            </h1>
+          </div>
+          <div>
+            <p class="f-Roboto" style="color: #27a7a2">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit fuga
+              enim deleniti nostrum veritatis perferendis, velit possimus, illum
+              mollitia beatae consequatur vitae consectetur nam explicabo fugiat
+              corporis rem officia aut!
+            </p>
+          </div>
+          <div class="d-flex btn-soporte-doc justify-content-between f-Roboto">
+            <a class="btn btn-lg" href="#">SOPORTE</a>
+            <a class="btn btn-lg" href="#">DOCUMENTACIÓN</a>
+          </div>
+        </div>
+        <div class="col-md-8 px-3 rueda">
+          <!-- !RUEDA INFORMAIVA -->
+          <div class="row">
+            <div class="col-md-7">
+              <div class="position-relative" style="width: fit-content">
+                <svg
+                  width="450px"
+                  version="1.1"
+                  baseProfile="tiny"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 768.7 775.6"
+                  overflow="visible"
+                  xml:space="preserve"
+                >
+                  <circle fill="#3A79F7" cx="383.8" cy="392.3" r="133.4" />
+                  <circle
+                    fill="none"
+                    stroke="#C6C6C6"
+                    stroke-width="4"
+                    stroke-miterlimit="10"
+                    cx="383.8"
+                    cy="392.3"
+                    r="379.6"
+                  />
+                  <path
+                    class="porcion1"
+                    fill="#3A79F7"
+                    d="M370.4,34.1c-0.1,0-0.3,0-0.4,0c-50.6,1.9-99.1,14.1-144.3,36.3c-43.8,21.5-82.2,51.2-114.2,88.3
+                            c-1.9,2.2-2.8,5-2.5,7.9c0.3,2.9,1.7,5.6,4,7.4l116.2,92.7c4.4,3.5,10.9,3,14.7-1.2c33.1-36.5,78.3-58.4,127.3-61.6
+                            c5.6-0.4,10-5.1,10-10.7V44.8c0-2.9-1.2-5.7-3.3-7.7C375.8,35.1,373.2,34.1,370.4,34.1z"
+                  />
+                  <path
+                    class="porcion2"
+                    fill="#3A79F7"
+                    d="M397.1,34.1c-2.8,0-5.4,1.1-7.4,3c-2.1,2-3.3,4.8-3.3,7.7v148.3c0,5.6,4.4,10.3,10,10.7
+                            c49,3.2,94.2,25.1,127.3,61.6c3.8,4.2,10.2,4.7,14.7,1.2L654.6,174c2.3-1.8,3.7-4.5,4-7.4c0.3-2.9-0.6-5.7-2.5-7.9
+                            c-32-37.1-70.4-66.8-114.2-88.3C496.6,48.2,448.1,36,397.5,34.1C397.4,34.1,397.2,34.1,397.1,34.1z"
+                  />
+                  <path
+                    class="porcion3"
+                    fill="#3A79F7"
+                    d="M664.7,175.8c-2.4,0-4.8,0.8-6.7,2.4l-116.3,92.8c-4.4,3.5-5.3,9.8-2.2,14.4c21.7,31.6,33.2,68.6,33.2,107
+                            c0,10.2-0.8,20.5-2.5,30.6c-0.9,5.6,2.7,10.9,8.2,12.2l145.8,33.3c2.9,0.7,5.8,0.1,8.3-1.5c2.4-1.6,4.1-4.1,4.6-6.9
+                            c4.1-21.8,6.2-44.2,6.2-66.5c0-77.4-24.2-151.2-70.1-213.3c-1.7-2.3-4.3-3.8-7.2-4.2C665.6,175.8,665.1,175.8,664.7,175.8z"
+                  />
+                  <path
+                    class="porcion4"
+                    fill="#3A79F7"
+                    d="M189.9,437.6l0.6,2.6l-146,33.3c-2.9,0.7-5.3,2.4-6.8,4.9c-1.5,2.5-1.9,5.5-1.2,8.3
+                            c25.7,95.9,91,177.7,179,224.4c2.6,1.4,5.5,1.6,8.3,0.7c2.8-0.9,5.1-2.9,6.3-5.6l65.2-135.5c2.4-5.1,0.5-11.2-4.4-14
+                            c-42.5-24-73.6-62.8-87.8-109.3c-1.6-5.4-7.2-8.6-12.6-7.3L189.9,437.6z"
+                  />
+                  <path
+                    class="porcion5"
+                    fill="#3A79F7"
+                    d="M574.7,440c-4.6,0-8.9,3-10.3,7.6c-14.2,46.5-45.4,85.3-87.8,109.3c-4.9,2.8-6.9,8.9-4.4,14l65.2,135.5
+                            c1.3,2.7,3.5,4.6,6.3,5.6c2.8,0.9,5.7,0.7,8.3-0.7c88-46.7,153.2-128.5,179-224.4c0.8-2.8,0.3-5.8-1.2-8.3c-1.5-2.5-3.9-4.3-6.8-4.9
+                            l-146-33.3C576.3,440.1,575.5,440,574.7,440z"
+                  />
+                  <path
+                    class="porcion6"
+                    fill="#3A79F7"
+                    d="M309.9,567.1c-4,0-7.9,2.3-9.7,6.1l-65.3,135.5c-1.3,2.7-1.4,5.6-0.4,8.4c1,2.7,3,4.9,5.7,6.1
+                            c45.4,19.8,93.7,29.8,143.5,29.8c49.9,0,98.2-10,143.5-29.8c2.7-1.2,4.7-3.3,5.7-6.1c1-2.8,0.9-5.8-0.4-8.4l-65.3-135.5
+                            c-2.4-5.1-8.4-7.4-13.7-5.3c-22.2,8.9-45.8,13.4-69.9,13.4c-24.2,0-47.7-4.5-69.9-13.4C312.6,567.3,311.2,567.1,309.9,567.1z"
+                  />
+                  <path
+                    class="porcion7"
+                    fill="#3A79F7"
+                    d="M102.9,175.8c-0.5,0-1,0-1.4,0.1c-2.9,0.4-5.4,1.9-7.2,4.2C48.4,242.2,24.2,316,24.2,393.4
+                            c0,22.3,2.1,44.7,6.2,66.5c0.5,2.9,2.2,5.3,4.6,6.9c2.5,1.6,5.4,2.2,8.3,1.5l145.8-33.3c5.5-1.3,9.1-6.6,8.2-12.2
+                            c-1.6-10-2.5-20.3-2.5-30.6c0-38.4,11.5-75.4,33.2-107c3.2-4.6,2.2-10.9-2.2-14.4l-116.3-92.8C107.7,176.6,105.3,175.8,102.9,175.8z
+                            "
+                  />
+                  <g>
+                    <path
+                      class="p3"
+                      fill="#E0E0E0"
+                      d="M522.4,285.8l-18.2,14.5c19.5,25.5,31.1,57.4,31.1,92c0,10.5-1.1,20.7-3.1,30.6L555,428
+                                c2.4-11.5,3.7-23.5,3.7-35.7C558.6,352.2,545.1,315.3,522.4,285.8z"
+                    />
+                    <path
+                      class="p5"
+                      fill="#E0E0E0"
+                      d="M530.8,429.1c-10.7,43-39.8,78.7-78.4,98.4l10.1,21c44.9-22.7,78.7-64.2,91-114.2L530.8,429.1z"
+                    />
+                    <path
+                      class="p1"
+                      fill="#E0E0E0"
+                      d="M267.3,295.3c27.2-32.6,67.7-53.6,113.2-54.5v-23.3c-52.9,1-100,25.4-131.5,63.3L267.3,295.3z"
+                    />
+                    <path
+                      class="p2"
+                      fill="#E0E0E0"
+                      d="M387,240.8c45.5,0.9,86.1,21.9,113.2,54.5l18.2-14.5c-31.4-37.9-78.6-62.3-131.5-63.3V240.8z"
+                    />
+                    <path
+                      class="p4"
+                      fill="#E0E0E0"
+                      d="M236.7,429.1l-22.7,5.2c12.3,50,46.1,91.5,91,114.2l10.1-21C276.5,507.8,247.4,472.1,236.7,429.1z"
+                    />
+                    <path
+                      class="p6"
+                      fill="#E0E0E0"
+                      d="M446.7,530.2c-19.2,8.8-40.5,13.6-62.9,13.6c-22.4,0-43.7-4.9-62.9-13.6l-10.1,21
+                                c22.2,10.2,46.9,15.9,73,15.9c26.1,0,50.8-5.7,73-15.9L446.7,530.2z"
+                    />
+                    <path
+                      class="p7"
+                      fill="#E0E0E0"
+                      d="M232.2,392.3c0-34.6,11.6-66.5,31.1-92l-18.2-14.5c-22.7,29.5-36.2,66.4-36.2,106.5
+                                c0,12.2,1.3,24.2,3.7,35.7l22.7-5.2C233.3,413,232.2,402.8,232.2,392.3z"
+                    />
+                  </g>
+                  <g>
+                    <line
+                      fill="none"
+                      stroke="#C6C6C6"
+                      stroke-width="4"
+                      stroke-miterlimit="10"
+                      x1="383.8"
+                      y1="22.2"
+                      x2="383.8"
+                      y2="1"
+                    />
+                    <line
+                      fill="none"
+                      stroke="#C6C6C6"
+                      stroke-width="4"
+                      stroke-miterlimit="10"
+                      x1="94.4"
+                      y1="161.6"
+                      x2="77.9"
+                      y2="148.4"
+                    />
+                    <line
+                      fill="none"
+                      stroke="#C6C6C6"
+                      stroke-width="4"
+                      stroke-miterlimit="10"
+                      x1="23"
+                      y1="474.7"
+                      x2="2.3"
+                      y2="479.4"
+                    />
+                    <line
+                      fill="none"
+                      stroke="#C6C6C6"
+                      stroke-width="4"
+                      stroke-miterlimit="10"
+                      x1="223.2"
+                      y1="725.7"
+                      x2="214"
+                      y2="744.8"
+                    />
+                    <line
+                      fill="none"
+                      stroke="#C6C6C6"
+                      stroke-width="4"
+                      stroke-miterlimit="10"
+                      x1="544.4"
+                      y1="725.7"
+                      x2="553.6"
+                      y2="744.8"
+                    />
+                    <line
+                      fill="none"
+                      stroke="#C6C6C6"
+                      stroke-width="4"
+                      stroke-miterlimit="10"
+                      x1="744.6"
+                      y1="474.7"
+                      x2="765.3"
+                      y2="479.4"
+                    />
+                    <line
+                      fill="none"
+                      stroke="#C6C6C6"
+                      stroke-width="4"
+                      stroke-miterlimit="10"
+                      x1="673.1"
+                      y1="161.6"
+                      x2="689.7"
+                      y2="148.4"
+                    />
+                  </g>
+                  <g>
+                    <g>
+                      <g>
+                        <path
+                          fill="#FFFFFF"
+                          d="M311.2,384c1.2-10.6,8-24.3,32.2-24.3c20.9,0,30.7,10.8,30.7,23.3c0,9.8-5.8,14.6-11.1,16.8v0.4
+                                        c5.3,1.9,14.1,6.8,14.1,19.8c0,13.3-8.9,26.8-33.9,26.8c-26.5,0-32.9-15.5-33.6-25.4h23.1c0.7,4.8,3.4,9,10.2,9
+                                        c6.2,0,9.3-4.2,9.3-10.6c0-6.9-2.9-10.7-11.7-10.7H333v-16.4h7c7.7,0,10-2.5,10-8.3c0-4.8-2.4-8-7.9-8c-6.4,0-8.1,3.6-8.7,7.8
+                                        H311.2z"
+                        />
+                        <path
+                          fill="#FFFFFF"
+                          d="M461.9,402.6c0,23.8-8.6,43.9-35.1,43.9c-26,0-34.9-19.9-34.9-43.4c0-23,9.2-43.5,35.3-43.5
+                                        C452.2,359.6,461.9,378.2,461.9,402.6z M417.2,402.8c0,17.5,1.4,26.6,9.9,26.6c8.4,0,9.5-8.9,9.5-26.5c0-18.1-1.5-26-9.4-26
+                                        C419.6,376.8,417.2,383.7,417.2,402.8z"
+                        />
+                      </g>
+                      <circle fill="#FFFFFF" cx="386.4" cy="436.3" r="8.7" />
+                    </g>
+                    <g>
+                      <path
+                        fill="#FFFFFF"
+                        d="M355,342.6h-11.8v7h13l-0.6,3.8h-16.8v-24.3h16.7v3.8h-12.3v6H355V342.6z"
+                      />
+                      <path
+                        fill="#FFFFFF"
+                        d="M362,348c0.4,1.6,1.7,2.5,3.8,2.5c2.1,0,2.9-0.8,2.9-2.1c0-1.3-0.8-1.9-3.7-2.6c-5.6-1.4-6.6-3.1-6.6-5.6
+                                    c0-2.6,1.9-5.3,7-5.3c5.2,0,7.1,2.9,7.2,5.4h-4.2c-0.2-0.8-0.8-2.2-3.3-2.2c-1.9,0-2.6,0.9-2.6,1.8c0,1,0.6,1.6,3.7,2.3
+                                    c5.8,1.4,6.8,3.3,6.8,6c0,3-2.4,5.6-7.5,5.6c-5.2,0-7.5-2.5-7.9-5.8H362z"
+                      />
+                      <path
+                        fill="#FFFFFF"
+                        d="M376.6,353.3v-14.7h-2.7v-3.3h2.7v-1.8c0-3.6,1.7-6.2,5.6-6.2c0.8,0,1.8,0.1,2.2,0.2v3.5
+                                    c-0.3-0.1-0.8-0.1-1.2-0.1c-1.6,0-2.2,0.7-2.2,2.9v1.5h3.3v3.3H381v14.7H376.6z"
+                      />
+                      <path
+                        fill="#FFFFFF"
+                        d="M389.3,345.2c0,2.7,1.4,5.1,4.1,5.1c2.3,0,3-1,3.6-2.2h4.4c-0.7,2.2-2.6,5.7-8,5.7c-5.9,0-8.3-4.5-8.3-9.2
+                                    c0-5.6,2.8-9.7,8.5-9.7c6.1,0,8.1,4.5,8.1,8.8c0,0.6,0,1-0.1,1.5H389.3z M397.1,342.5c0-2.4-1.1-4.4-3.7-4.4c-2.7,0-3.8,1.8-4,4.4
+                                    H397.1z"
+                      />
+                      <path
+                        fill="#FFFFFF"
+                        d="M404.5,340.2c0-2,0-3.6,0-4.9h4.3c0.1,0.4,0.1,2.1,0.1,3.3c0.8-2.2,2.8-3.7,5.9-3.8v4.2
+                                    c-3.6,0-5.9,1.3-5.9,6.1v8.2h-4.4V340.2z"
+                      />
+                      <path
+                        fill="#FFFFFF"
+                        d="M430.9,348.9c0,1.7,0.1,4,0.2,4.4H427c-0.1-0.4-0.2-1.3-0.3-2c-0.6,1.1-1.9,2.4-5.2,2.4
+                                    c-4.3,0-6.1-2.8-6.1-5.6c0-4.1,3.3-6,8.6-6c1,0,2.1,0,2.7,0V341c0-1.4-0.5-2.9-3.1-2.9c-2.4,0-2.9,1.1-3.2,2.4h-4.2
+                                    c0.3-3,2.1-5.7,7.5-5.6c4.7,0,7.3,1.9,7.3,6.1V348.9z M426.7,344.9c-0.5,0-1.6,0-2.3,0c-3.2,0-4.6,0.9-4.6,3c0,1.5,1,2.7,2.9,2.7
+                                    c3.6,0,4-2.4,4-5.1V344.9z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+                <div class="f-Roboto">
+                  <a
+                    href=""
+                    class="porcion1 position-absolute"
+                    style="color: #fff; top: 16%; left: 27%"
+                  >
+                    <h2 class="fw-bolder">GDT</h2>
+                  </a>
+                  <a
+                    href=""
+                    class="porcion2 position-absolute"
+                    style="color: #fff; top: 16%; left: 54%"
+                  >
+                    <h6>Liquidadciones</h6>
+                  </a>
+                  <a
+                    href=""
+                    class="porcion3 position-absolute"
+                    style="color: #fff; top: 40%; left: 79%"
+                  >
+                    <h2 class="fw-bolder">CIV</h2>
+                  </a>
+                  <a
+                    href=""
+                    class="porcion5 position-absolute"
+                    style="color: #fff; top: 70%; left: 71%"
+                  >
+                    <h6>Seguros</h6>
+                  </a>
+                  <a
+                    href=""
+                    class="porcion6 position-absolute"
+                    style="color: #fff; top: 83%; left: 42.5%"
+                  >
+                    <h6>Inventario</h6>
+                  </a>
+                  <a
+                    href=""
+                    class="porcion4 position-absolute"
+                    style="color: #fff; top: 70%; left: 16%"
+                  >
+                    <h6>Evadis</h6>
+                  </a>
+                  <a
+                    href=""
+                    class="porcion7 position-absolute"
+                    style="color: #fff; top: 39%; left: 8%"
+                  >
+                    <h6 class="mb-0">Inventario</h6>
+                    <h2 class="fw-bolder" style="top: 42%; left: 9%">B2C</h2>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 px-3 align-items-center">
+              <div class="descripciones f-Roboto">
+                <div class="t2">
+                  <h3>Liquidaciones</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Placeat quia laudantium aspernatur similique perspiciatis
+                    necessitatibus alias nesciunt ducimus, voluptatem vel ad
+                    illum dicta quos, molestias, ea ipsum aliquam? Ea, incidunt.
+                  </p>
+                </div>
+                <div class="t3">
+                  <h3>CIV</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Placeat quia laudantium aspernatur similique perspiciatis
+                    necessitatibus alias nesciunt ducimus, voluptatem vel ad
+                    illum dicta quos, molestias, ea ipsum aliquam? Ea, incidunt.
+                  </p>
+                </div>
+                <div class="t5">
+                  <h3>Seguros</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Placeat quia laudantium aspernatur similique perspiciatis
+                    necessitatibus alias nesciunt ducimus, voluptatem vel ad
+                    illum dicta quos, molestias, ea ipsum aliquam? Ea, incidunt.
+                  </p>
+                </div>
+                <div class="t6">
+                  <h3>Inventario</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Placeat quia laudantium aspernatur similique perspiciatis
+                    necessitatibus alias nesciunt ducimus, voluptatem vel ad
+                    illum dicta quos, molestias, ea ipsum aliquam? Ea, incidunt.
+                  </p>
+                </div>
+                <div class="t4">
+                  <h3>Evadis</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Placeat quia laudantium aspernatur similique perspiciatis
+                    necessitatibus alias nesciunt ducimus, voluptatem vel ad
+                    illum dicta quos, molestias, ea ipsum aliquam? Ea, incidunt.
+                  </p>
+                </div>
+                <div class="t7">
+                  <h3>Inventario B2C</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Placeat quia laudantium aspernatur similique perspiciatis
+                    necessitatibus alias nesciunt ducimus, voluptatem vel ad
+                    illum dicta quos, molestias, ea ipsum aliquam? Ea, incidunt.
+                  </p>
+                </div>
+                <div class="t1">
+                  <h3>GDT</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Placeat quia laudantium aspernatur similique perspiciatis
+                    necessitatibus alias nesciunt ducimus, voluptatem vel ad
+                    illum dicta quos, molestias, ea ipsum aliquam? Ea, incidunt.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin Componente 2 -->
+
+    <!-- Componente 3 -->
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div
+          class="pe-5"
+          style="border: solid 0 #072f35; border-right-width: 3px; width: 30%"
+          id="side-bar"
+        >
+          <div
+            class="mx-auto pt-0 px-0"
+            style="border-radius: 10px; border: solid 3px #072f35"
+          >
+            <div class="list-group menu-vertical f-Roboto mb-1 overflow-hidden">
+              <a class="list-group-item">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/img/OLX-azul-icono-casa.svg"
+                    class="me-2"
+                    alt=""
+                    width="30px"
+                  />
+                  <div>Menú</div>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/img/OLX-azul-icono-etiqueta.svg"
+                    class="me-2"
+                    alt=""
+                    width="30px"
+                  />
+                  <div>Venta digital</div>
+                </div>
+                <div>
+                  <span class="badge">New</span>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/img/OLX-azul-icono-tuercas.svg"
+                    class="me-2"
+                    alt=""
+                    width="30px"
+                  />
+                  <div>Administrar condiciones de negocio</div>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/img/OLX-azul-icono-documento.svg"
+                    class="me-2"
+                    alt=""
+                    width="30px"
+                  />
+                  <div>Configurar Tarifas</div>
+                </div>
+                <!-- !etiqueta de nuevo -->
+                <!-- <div> 
+                                <span class="badge">New</span>
+                            </div> -->
+                <!-- ! -->
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/img/OLX-azul-icono-clip.svg"
+                    class="me-2"
+                    alt=""
+                    width="30px"
+                  />
+                  <div>Asociacion vehiculos</div>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/img/OLX-azul-icono-carro.svg"
+                    class="me-2"
+                    alt=""
+                    width="30px"
+                  />
+                  <div>Compra vehiculos</div>
+                </div>
+                <div>
+                  <span class="badge">New</span>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/img/OLX-azul-icono-imagen.svg"
+                    class="me-2"
+                    alt=""
+                    width="30px"
+                  />
+                  <div>Cargar fotos vehiculo</div>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/img/OLX-azul-icono-marker.svg"
+                    class="me-2"
+                    alt=""
+                    width="30px"
+                  />
+                  <div>Ciudades</div>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/img/OLX-azul-icono-carro.svg"
+                    class="me-2"
+                    alt=""
+                    width="30px"
+                  />
+                  <div>Venta vehiculos</div>
+                </div>
+              </a>
+              <a href="#" class="list-group-item">
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/img/OLX-azul-icono-lupa.svg"
+                    class="me-2"
+                    alt=""
+                    width="30px"
+                  />
+                  <div>Consultas</div>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="list-group-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+                style="border-bottom-width: 0"
+              >
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./assets/img/OLX-azul-icono-libro.svg"
+                    class="me-2"
+                    alt=""
+                    width="30px"
+                  />
+                  <div>Formatos</div>
+                </div>
+                <div>
+                  <img
+                    src="./assets/img/icono-flecha-select.svg"
+                    alt=""
+                    width="20px"
+                  />
+                </div>
+              </a>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item" style="border: 0">
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body px-0">
+                      <div class="list-group f-Roboto mb-1">
+                        <div class="formatos list-group-item">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./assets/img/OLX-icono-pdf.svg"
+                              class="me-2"
+                              alt=""
+                              width="30px"
+                            />
+                            <div>Autorización prenda</div>
+                          </div>
+                          <div>
+                            <span class="badge">Descargar</span>
+                          </div>
+                        </div>
+                        <div class="formatos list-group-item">
+                          <div class="d-flex align-items-center">
+                            <img
+                              src="./assets/img/OLX-icono-pdf.svg"
+                              class="me-2"
+                              alt=""
+                              width="30px"
+                            />
+                            <div>Compra vehiculos</div>
+                          </div>
+                          <div>
+                            <span class="badge">Descargar</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="sidebarToggle" id="">
+            <img src="./assets/img/flecha-ocultar.svg" alt="" width="15px" />
+          </div>
+        </div>
+        <div class="" id="side-content">
+          <h1
+            class="f-Roboto"
+            style="color: #072f35; letter-spacing: -1px; font-weight: 900"
+          >
+            BIENVENIDO
+          </h1>
+          <p class="f-Roboto" style="color: #536f73">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit fuga
+            enim deleniti nostrum veritatis perferendis, velit possimus, illum
+            mollitia beatae consequatur vitae consectetur nam explicabo fugiat
+            corporis rem officia aut!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Fin componente 3 -->
+
+    <!-- Componente 4 -->
+    <!-- !Inicio de sesion -->
+    <div class="container py-5">
+      <div class="row justify-conten-center mx-0">
+        <div
+          class="mx-auto pt-5 pb-2 px-2 text-center"
+          style="
+            background-color: #072f35;
+            border-radius: 5px;
+            max-width: 400px;
+          "
+        >
+          <h3 class="f-RobotoC" style="color: #fff; font-weight: 700">
+            Bienvenido a <br />Gestión Documental
+          </h3>
+          <div class="row justify-content-center mt-3 mb-5">
+            <img
+              src="./assets/img/olx-autos-logo-verde.svg"
+              alt=""
+              style="width: 50%"
+            />
+          </div>
+          <div
+            class="mx-auto col-md-12 py-3 text-center"
+            style="background-color: #fff; border-radius: 0 0 5px 5px"
+          >
+            <h5 class="f-RobotoC fw-bolder mb-3" style="color: #072f35">
+              Inicio de sesión usuario
+            </h5>
+            <form action="" class="login">
+              <div class="input-group  mb-3 mx-auto" style="width: 15rem">
+                <span
+                  class="input-group-text"
+                  id="basic-addon1"
+                  style="background-color: #072f35"
+                  ><img
+                    src="./assets/img/icono-usuario-log.svg"
+                    alt=""
+                    style="width: 1.5rem; height: 1.5rem"
+                  />
+                </span>
+                <input
+                  type="text"
+                  class="form-control"
+                  aria-describedby="basic-addon1"
+                />
+              </div>
+              <div class="input-group mb-3 mx-auto" style="width: 15rem">
+                <span
+                  class="input-group-text"
+                  id="basic-addon2"
+                  style="background-color: #072f35"
+                >
+                  <img
+                    src="./assets/img/icono-llave.svg"
+                    alt=""
+                    style="width: 1.5rem; height: 1.5rem"
+                  />
+                </span>
+                <input
+                  type="password"
+                  class="form-control"
+                  aria-describedby="basic-addon2"
+                />
+              </div>
+              <button
+                href=""
+                class="btn rounded-pill f-RobotoC px-5 mb-2"
+                style="
+                  background-color: #072f35;
+                  color: #45e6dd;
+                  font-weight: 500;
+                "
+              >
+                INGRESAR
+              </button>
+            </form>
+            <a href="" class="f-RobotoC" style="color: #072f35"
+              >¿Has olvidado la contraseña?</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ! GESTION DOCUMENTAL  -->
+    <div class="container py-5">
+      <div class="row justify-conten-center mx-0">
+        <div
+          class="mx-auto pt-1 px-0"
+          style="
+            background-color: #072f35;
+            border-radius: 5px;
+            max-width: 500px;
+          "
+        >
+          <h3 class="f-RobotoC p-3 m-0" style="color: #fff; font-weight: 700">
+            GESTIÓN DOCUMENTAL
+          </h3>
+          <div
+            class="mx-auto col-md-12 py-3"
+            style="background-color: #fff; border-radius: 0 0 5px 5px"
+          >
+            <p
+              class="mx-auto f-Roboto"
+              style="width: 90% !important; color: #072f35"
+            >
+              Actualmente el usuario <span>(Inserte nombre de usuario)</span> no
+              está autorizado para realizar cambios sobre la gestión documental,
+              por favor comuníquese con la mesa de ayuda.
+            </p>
+
+            <div
+              class="row mx-auto my-4"
+              style="
+                width: 90% !important;
+                height: 1.3px;
+                background-color: #072f35;
+              "
+            >
+              <hr />
+            </div>
+            <div class="row mt-5 mb-2 logo-btn justify-content-center">
+              <div class="col-md-6 text-center">
+                <a
+                  href=""
+                  class="btn rounded-pill f-Roboto fw-bolder fs-5 ps-5 pe-2 mb-4 py-2"
+                  style="
+                    background-color: #45e6dd;
+                    color: #072f35;
+                    font-weight: 400;
+                    width: 90%;
+                    letter-spacing: -0.5px;
+                  "
+                  >Regresar a Esfera</a
+                >
+                <div class="text-center">
+                  <img
+                    src="./assets/img/olx-autos-logo-gris.svg"
+                    alt=""
+                    style="width: 70%"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin componente 4 -->
+
+    <!-- Componente 5 -->
+    <div class="container pt-5">
+      <div class="row justify-content-center">
+        <div
+          class="row justify-content-center py-4 rounded-top"
+          style="background-color: #072f35"
+        >
+          <h2
+            class="text-center f-RobotoC"
+            style="color: #45e6dd; font-weight: 700"
+          >
+            Bienvenido Gestión Documental para compra de vehículo
+          </h2>
+          <h5
+            class="text-center f-Roboto"
+            style="color: #fff; font-weight: 400"
+          >
+            Aquí podrás realizar la creación, gestión y monitoreo de las
+            carpetas.
+          </h5>
+        </div>
+        <div
+          class="row pt-4 justify-content-center rounded-bottom"
+          style="background-color: #fff"
+        >
+          <div class="row">
+            <div class="col-md-3 text-center px-1">
+              <h6
+                class="f-RobotoC"
+                style="color: #072f35; font-size: 14px; font-weight: 700"
+              >
+                Ingreso de datos generales
+              </h6>
+              <div class="rounded-pill p-1" style="background-color: #45e6dd">
+                <a
+                  class="f-RobotoC"
+                  href=""
+                  style="color: #072f35; font-weight: 400; font-size: 18px"
+                  >Crear o modificar carpeta</a
+                >
+              </div>
+            </div>
+            <div class="col-md-3 text-center px-1">
+              <h6
+                class="f-RobotoC"
+                style="color: #072f35; font-size: 14px; font-weight: 700"
+              >
+                Monitoreo de carpetas
+              </h6>
+              <div class="rounded-pill p-1" style="background-color: #45e6dd">
+                <a
+                  class="f-RobotoC"
+                  href=""
+                  style="color: #072f35; font-weight: 400; font-size: 18px"
+                  >Panel de control</a
+                >
+              </div>
+            </div>
+            <div class="col-md-3 text-center px-1">
+              <h6
+                class="f-RobotoC"
+                style="color: #072f35; font-size: 14px; font-weight: 700"
+              >
+                Solicitud de trámites
+              </h6>
+              <div class="rounded-pill p-1" style="background-color: #45e6dd">
+                <a
+                  class="f-RobotoC"
+                  href=""
+                  style="color: #072f35; font-weight: 400; font-size: 18px"
+                  >Solicitud de trámites</a
+                >
+              </div>
+            </div>
+            <div class="col-md-3 text-center px-1">
+              <h6
+                class="f-RobotoC"
+                style="color: #072f35; font-size: 14px; font-weight: 700"
+              >
+                Crear alerta por pérdida de custodia de carpeta
+              </h6>
+              <div class="rounded-pill p-1" style="background-color: #45e6dd">
+                <a
+                  class="f-RobotoC"
+                  href=""
+                  style="color: #072f35; font-weight: 400; font-size: 18px"
+                  >Crear alerta</a
+                >
+              </div>
+            </div>
+          </div>
+          <div
+            class="row mx-auto my-4"
+            style="
+              width: 90% !important;
+              height: 1.3px;
+              background-color: #072f35;
+            "
+          >
+            <hr />
+          </div>
+          <div class="row">
+            <h6
+              class="f-RobotoC text-center"
+              style="color: #072f35; font-size: 14px; font-weight: 700"
+            >
+              Estado de envío de carpetas y placas
+            </h6>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-3 text-center px-1 mb-3">
+              <div class="rounded-pill p-1" style="background-color: #45e6dd">
+                <a
+                  class="f-RobotoC"
+                  href=""
+                  style="color: #072f35; font-weight: 400; font-size: 18px"
+                  >Crear alerta</a
+                >
+              </div>
+            </div>
+            <div class="col-md-3 text-center px-1 mb-3">
+              <div class="rounded-pill p-1" style="background-color: #45e6dd">
+                <a
+                  class="f-RobotoC"
+                  href=""
+                  style="color: #072f35; font-weight: 400; font-size: 18px"
+                  >Carpetas custodia transportista</a
+                >
+              </div>
+            </div>
+            <div class="col-md-3 text-center px-1 mb-3">
+              <div class="rounded-pill p-1" style="background-color: #45e6dd">
+                <a
+                  class="f-RobotoC"
+                  href=""
+                  style="color: #072f35; font-weight: 400; font-size: 18px"
+                  >Placas sin carpeta</a
+                >
+              </div>
+            </div>
+            <div class="col-md-3 text-center px-1 mb-3">
+              <div class="rounded-pill p-1" style="background-color: #45e6dd">
+                <a
+                  class="f-RobotoC"
+                  href=""
+                  style="color: #072f35; font-weight: 400; font-size: 18px"
+                  >Estado global documentos</a
+                >
+              </div>
+            </div>
+            <div class="col-md-3 text-center px-1 mb-3">
+              <div class="rounded-pill p-1" style="background-color: #45e6dd">
+                <a
+                  class="f-RobotoC"
+                  href=""
+                  style="color: #072f35; font-weight: 400; font-size: 18px"
+                  >Registrar entrega de transportista</a
+                >
+              </div>
+            </div>
+            <div class="col-md-3 text-center px-1 mb-3">
+              <div class="rounded-pill p-1" style="background-color: #45e6dd">
+                <a
+                  class="f-RobotoC"
+                  href=""
+                  style="color: #072f35; font-weight: 400; font-size: 18px"
+                  >Validar firmas</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row my-5 logo-btn">
+            <div class="text-center">
+              <img
+                src="./assets/img/olx-autos-logo-gris.svg"
+                alt=""
+                style="width: 20%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin componente 5 -->
+
+    <!-- Componente 6 -->
+    <!-- ! TARJETA INGRESE PLACA -->
+    <div class="container py-5">
+      <div class="row justify-conten-center mx-0">
+        <div
+          class="col-md-4 mx-auto pt-5 pb-3 text-center"
+          style="background-color: #072f35; border-radius: 5px"
+        >
+          <h3 class="f-RobotoC mb-5" style="color: #45e6dd; font-weight: 700">
+            Ingrese placa
+          </h3>
+          <form>
+            <div class="mb-3 mx-auto" style="width: 70%; position: relative">
+              <!-- ! placa para mostrar y ocultar-->
+              <img
+                src="./assets/img/icono-placa.svg"
+                id="placa-ejemplo"
+                alt=""
+                style="
+                  width: 80px;
+                  position: absolute;
+                  right: -15px;
+                  top: -20px;
+                "
+              />
+              <!-- !fin  -->
+              <input
+                type=""
+                class="form-control"
+                id=""
+                aria-describedby="emailHelp"
+              />
+              <div
+                id="emailHelp"
+                class="form-text text-end f-RobotoC"
+                style="color: #45e6dd; cursor: pointer"
+              >
+                Ver ejemplo
+              </div>
+            </div>
+            <button
+              type="submit"
+              class="btn rounded-pill f-Roboto px-5 mb-4"
+              style="
+                background-color: #45e6dd;
+                color: #072f35;
+                font-weight: 500;
+                letter-spacing: -0.5px;
+              "
+            >
+              CARGAR
+            </button>
+          </form>
+          <div class="row justify-content-center mt-2 mb-1">
+            <img src="./assets/img/olx-autos-logo-verde.svg" alt="" style="width: 40%" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !TARJETA DE ADVERTENCIA -->
+    <div class="container py-5">
+      <div class="row justify-conten-center mx-0">
+        <div
+          class="col-md-4 mx-auto pt-5 pb-3 text-center"
+          style="background-color: #072f35; border-radius: 5px"
+        >
+          <h3 class="f-RobotoC" style="color: #fff; font-weight: 700">
+            Advertencia
+          </h3>
+          <img src="./assets/img/icono-alerta.svg" alt="" style="width: 50px" />
+
+          <div class="mb-3 mx-auto" style="width: 70%">
+            <p class="my-2 f-Roboto" style="color: #fff; line-height: 1rem">
+              Esta placa no existe<br />en la base de datos
+            </p>
+          </div>
+          <a
+            href=""
+            class="btn rounded-pill f-Roboto px-3 mb-4"
+            style="
+              background-color: #45e6dd;
+              color: #072f35;
+              font-weight: 500;
+              letter-spacing: -0.5px;
+            "
+            >INGRESAR OTRA PLACA</a
+          >
+
+          <div class="row justify-content-center mt-2 mb-1">
+            <img src="./assets/img/olx-autos-logo-verde.svg" alt="" style="width: 40%" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- !TARJETA DE ADVERTENCIA 2 -->
+    <div class="container py-5">
+      <div class="row justify-conten-center mx-0">
+        <div
+          class="col-md-4 mx-auto pt-4 pb-3 text-center"
+          style="background-color: #072f35; border-radius: 5px"
+        >
+          <h3 class="f-RobotoC" style="color: #fff; font-weight: 700">
+            Advertencia
+          </h3>
+          <img src="./assets/img/icono-alerta.svg" alt="" style="width: 50px" />
+
+          <div class="mb-3 mx-auto" style="width: 70%">
+            <p class="my-2 f-Roboto" style="color: #fff; line-height: 1rem">
+              Esta placa ya tiene<br />la carpeta creada<br />(Inserte código de
+              carpeta)
+            </p>
+          </div>
+          <a
+            href=""
+            class="btn rounded-pill f-Roboto px-4 mb-1"
+            style="
+              background-color: #45e6dd;
+              color: #072f35;
+              font-weight: 500;
+              letter-spacing: -0.5px;
+            "
+            >MODIFICAR CARPETA</a
+          >
+          <a
+            href=""
+            class="btn rounded-pill f-Roboto px-3 mb-4"
+            style="
+              background-color: #45e6dd;
+              color: #072f35;
+              font-weight: 500;
+              letter-spacing: -0.5px;
+            "
+            >INGRESAR OTRA PLACA</a
+          >
+
+          <div class="row justify-content-center mt-2 mb-1">
+            <img src="./assets/img/olx-autos-logo-verde.svg" alt="" style="width: 40%" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Fin componente 6 -->
+
+    <!-- Componente 7 -->
+    <div class="container py-5">
+      <div class="row justify-content-center">
+          <div class="col-md-7 py-3 px-5" style="background-color: #fff;border-radius:5px">
+              <h5 class="text-center f-RobotoC fw-bolder" style="color:#072f35 ;" >Placa</h5>
+              <div class="mx-auto rounded mb-5" style="background-color:#ebdb2b;width:150px;padding:3px">
+                  <div class="border border-dark border-2 rounded py-1">
+                      <h3 class="m-0 text-center f-RobotoC">AAA 123</h3>
+                      <h6 class="m-0 text-center f-RobotoC fw-bolder" style="font-size: 12px;">BOGOTÁ D.C</h6>
+                  </div>
+              </div>
+              <div >
+                  <form >
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-7 col-form-label p-0  f-Roboto" style="color: #536f73;">Ciudad de matrícula</label>
+                          <div class="col-md-5 p-0">
+                              <input type="text" class="form-control p-0 f-Roboto" id="" style="box-shadow:none;border:none" placeholder="Inserte Ciudad">
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-7 col-form-label p-0  f-Roboto " style="color: #536f73;">Prenda</label>
+                          <div class="col-md-5 p-0">
+                              <input type="text" class="form-control p-0 f-Roboto" id="" style="box-shadow:none;border:none" placeholder="Inserte Si o No">
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-7 col-form-label p-0  f-Roboto" style="color: #536f73;">Entidad de prenda</label>
+                          <div class="col-md-5 p-0">
+                              <input type="text" class="form-control p-0 f-Roboto" id="" style="box-shadow:none;border:none" placeholder="Inserte entidad">
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-7 col-form-label p-0  f-Roboto" style="color: #536f73;">Fecha vencimiento SOAT</label>
+                          <div class="col-md-5 p-0">
+                              <input type="text" class="form-control p-0 f-Roboto" id="" style="box-shadow:none;border:none" placeholder="Inserte fecha">
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-7 col-form-label p-0  f-Roboto " style="color: #536f73;">Propietario</label>
+                          <div class="col-md-5 p-0">
+                              <input type="text" class="form-control p-0 f-Roboto" id="" style="box-shadow:none;border:none" placeholder="Inserte propietario">
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-7 col-form-label p-0  f-Roboto" style="color: #536f73;">Cédula</label>
+                          <div class="col-md-5 p-0">
+                              <input type="text" class="form-control p-0 f-Roboto" id="" style="box-shadow:none;border:none" placeholder="Inserte cédula">
+                          </div>
+                      </div>
+                      <div class=" row m-0" >
+                          <label for="" class="col-md-7 col-form-label p-0  f-Roboto" style="color: #536f73;">RTM</label>
+                          <div class="col-md-5 p-0">
+                              <input type="text" class="form-control p-0 f-Roboto" id="" style="box-shadow:none;border:none" placeholder="Inserte RTM">
+                          </div>
+                      </div>
+                      <div class="row mt-4 mb-2 logo-btn">
+                          <div class="col-md-4"></div>
+                          <div class="col-md-4">
+                              <div class="text-center">
+                              <img src="./assets/img/olx-autos-logo-gris.svg" alt="" style="width: 110%;">
+                              </div>
+                          </div>
+                          <div class="col-md-4 text-end">
+                              <button type="submit" class="btn  rounded-pill f-Roboto px-4 py-1 mt-1" style="background-color:#45e6dd;color:#072f35;font-weight:500;letter-spacing: -0.5px;">Crear carpeta</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+  <!-- ! FORMULARIO GUARDAR -->
+  <div class="container py-5">
+      <div class="row justify-content-center">
+          <div class="col-md-8 py-3 px-5" style="background-color: #fff;border-radius:5px">
+              <h5 class="text-center f-RobotoC fw-bolder" style="color:#072f35 ;" >Placa</h5>
+              <div class="mx-auto rounded mb-1" style="background-color:#ebdb2b;width:150px;padding:3px">
+                  <div class="border border-dark border-2 rounded py-1">
+                      <h3 class="m-0 text-center f-RobotoC">AAA 123</h3>
+                      <h6 class="m-0 text-center f-RobotoC fw-bolder" style="font-size: 12px;">BOGOTÁ D.C</h6>
+                  </div>
+              </div>
+              <h5 class="text-center f-RobotoC fw-bolder mb-3" style="color:#072f35 ;">Documentos de compra</h5>
+              <div >
+                  <form >
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Autorización autenticada de solicitud de prenda</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Carta de instracciones</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Pagaré</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Carta de levantamiento de prenda original</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Copia cédula de ciudadanía de propietario</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Contrato de compra y venta (dos juegos de originales)</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Contrato mandato (dos juegos de originales)</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Copia SOAT</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Copia tarjeta de propiedad</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">FUN (dos juegos de originales)</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Improntas (cuatro juegos legibles)</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Poder (Autenticado y firmado)</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Copias RTM</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="row mt-4 mb-2 logo-btn">
+                          <div class="col-md-4"></div>
+                          <div class="col-md-4">
+                              <div class="text-center">
+                              <img src="olx-autos-logo-gris.svg" alt="" style="width: 93%;">
+                              </div>
+                          </div>
+                          <div class="col-md-4 text-end">
+                              <button type="submit" class="btn  rounded-pill f-Roboto px-4 py-1 mt-1" style="background-color:#45e6dd;color:#072f35;font-weight:500;letter-spacing: -0.5px;">Guardar</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+
+    <!-- Fin componente 7 -->
+
+    <!-- Componente 8 -->
+    <div class="container py-5">
+      <div class="row justify-content-center">
+          <div class="col-md-8 py-3 px-5" style="background-color: #fff;border-radius:5px">
+              <h5 class="text-center f-RobotoC fw-bolder" style="color:#072f35 ;" >Placa</h5>
+              <div class="mx-auto rounded mb-1" style="background-color:#ebdb2b;width:150px;padding:3px">
+                  <div class="border border-dark border-2 rounded py-1">
+                      <h3 class="m-0 text-center f-RobotoC">AAA 123</h3>
+                      <h6 class="m-0 text-center f-RobotoC fw-bolder" style="font-size: 12px;">BOGOTÁ D.C</h6>
+                  </div>
+              </div>
+              <h5 class="text-center f-RobotoC fw-bolder mb-3" style="color:#072f35 ;">Documentos de compra</h5>
+              <div >
+                  <form >
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Copia cédula de ciudadanía de propietario
+                          </label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Contrato de compra y venta (dos juegos de originales)
+                          </label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">FUN (dos juegos de originales)
+                          </label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Contrato de inscripción de prendas (dos juegos Olx financiera)</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0" style="border: solid 0 #072f35; border-bottom-width:1.5px ;">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Copia y cédula del comprador
+                          </label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class=" row m-0">
+                          <label for="" class="col-md-8 col-form-label p-0  f-Roboto" style="color: #536f73;">Copia cámara de comericio del comprador</label>
+                          <div class="col-md-4 p-0">
+                              <select class="form-select p-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                  <option selected>Seleccione SI/NO</option>
+                                  <option value="1">SI</option>
+                                  <option value="2">NO</option>
+                              </select>
+                          </div>
+                      </div>
+                      
+                      <div class="row mt-4 mb-2 logo-btn">
+                          <div class="col-md-4"></div>
+                          <div class="col-md-4">
+                              <div class="text-center">
+                              <img src="olx-autos-logo-gris.svg" alt="" style="width: 93%;">
+                              </div>
+                          </div>
+                          <div class="col-md-4 text-end">
+                              <button type="submit" class="btn  rounded-pill f-Roboto px-4 py-1 mt-1" style="background-color:#45e6dd;color:#072f35;font-weight:500;letter-spacing: -0.5px;">Guardar</button>
+                          </div>
+                      </div>
+                  </form>
+              </div>
+              
+          </div>
+      </div>
+  </div>
+    <!-- Fin Componente 8 -->
+
+    <!-- componente 9 -->
+      <!-- !TARJETA DE ENHORABUENA -->
+<div class="container py-5">
+  <div class="row justify-conten-center mx-0">
+      <div class="col-md-4 mx-auto pt-5 pb-3 px-0 text-center " style="background-color: #072f35;border-radius:5px">
+          <h3 class="f-RobotoC" style="color:#fff; font-weight:700;">¡Enhorabuena!</h3>
+          <img src="./assets/img/icono-ok.svg" alt="" style="width:50px;">
+          
+              <div class="mb-3 mx-auto" style="width: 80%;">
+                  <p class="my-2 f-Roboto" style="color:#fff ;line-height: 1rem;">Se ha creado la carpeta con el código:<br>(Inserte consecutivo único para<br>carpeta según CMS - inserte placa)
+              </div>
+              <a href="" class="btn rounded-pill f-RobotoC px-5 mb-2" style="background-color:#45e6dd;color:#072f35;font-weight:400;">REGRESAR INICIO</a>
+          <div class="row justify-content-center mt-2 mb-1">
+              <img src="./assets/img/olx-autos-logo-verde.svg" alt="" style="width: 40%;">
+          </div>
+      </div>
+  </div>
+</div> 
+<!-- ! PLACAS SIN CARPETAS -->
+<div class="container py-5">
+  <div class="row justify-content-center">
+      <div class="col-md-6 py-3 px-5" style="background-color: #fff;border-radius:5px">
+          <h5 class="text-center f-RobotoC fw-bolder" style="color:#072f35 ;" >Placa sin carpetas</h5>
+          <div class="mx-auto rounded mb-5" style="background-color:#ebdb2b;width:150px;padding:3px">
+              <div class="border border-dark border-2 rounded py-1">
+                  <h3 class="m-0 text-center f-RobotoC">AAA 123</h3>
+                  <h6 class="m-0 text-center f-RobotoC fw-bolder" style="font-size: 12px;">BOGOTÁ D.C</h6>
+              </div>
+          </div>
+          <div>
+              <table id="psn" class="text-center  align-middle table-borderless mx-auto" style="width:70% ;">
+                  <thead class="f-RobotoC"style="color:#536f73;" >
+                      <tr>
+                          <td class="col-md-6">Placa</th>
+                          <td class="col-md-6">Opcion</th> 
+                      </tr>
+                  </thead>
+                  <tbody class="tbody-lines">
+                      <!-- * estructura de cada fila -->
+                      <tr style="border:0 solid #072f35">
+                          <td class=" p-1 f-Roboto fw-bolder" style="color:#536f73;">SDG435</td>
+                          <td class="p-1 ">
+                              <a href="" class="btn rounded-pill f-RobotoC px-4  py-1" style="background-color:#45e6dd;color:#072f35;font-weight:700;letter-spacing: -0.5px;">Crear carpeta</a>
+                          </td>
+                      </tr>
+                      <!-- *end -->
+                      <tr style="border:0 solid #072f35">
+                          <td class=" p-1 f-Roboto fw-bolder" style="color:#536f73;">SDG435</td>
+                          <td class="p-1 ">
+                              <a href="" class="btn rounded-pill f-RobotoC px-4  py-1" style="background-color:#45e6dd;color:#072f35;font-weight:700;letter-spacing: -0.5px;">Crear carpeta</a>
+                          </td>
+                      </tr>
+                      <tr style="border:0 solid #072f35">
+                          <td class=" p-1 f-Roboto fw-bolder" style="color:#536f73;">SDG435</td>
+                          <td class="p-1 ">
+                              <a href="" class="btn rounded-pill f-RobotoC px-4  py-1" style="background-color:#45e6dd;color:#072f35;font-weight:700;letter-spacing: -0.5px;">Crear carpeta</a>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+
+              <div class="row mt-4 mb-2 ">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-6 text-center">
+                      <a href="" class="btn rounded-pill f-RobotoC px-5 mb-4 py-1" style="background-color:#072f35;color:#45e6dd;font-weight:400;letter-spacing: -0.5px;">VOLVER A INICIO</a>
+                  </div>
+                  <div class="col-md-3 logo-btn">
+                      <div class="text-center">
+                      <img src="./assets/img/olx-autos-logo-gris.svg" alt="" style="width: 120%;">
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+      </div>
+  </div>
+</div>
+    <!-- Fin componente 9 -->
+
+    <!-- Componente 10 -->
+    <div class="container py-5">
+      <div class="row justify-content-center">
+          <div class="col-md-10 py-3 px-5" style="background-color: #fff;border-radius:5px;">
+              <h5 class="text-center f-RobotoC fw-bolder mb-5 mt-3" style="color:#072f35 ;" >Carpetas sin enviar</h5>
+              <div class="table-responsive-xxl" style="max-height: 300px; overflow-y: auto;">
+                  <table id="psn" class="text-center  align-middle table-borderless" style="min-width: 100%;">
+                      <thead class=" f-Roboto fw-bolder "style="color:#536f73;" >
+                          <tr>
+                              <td class="pb-3">Código</th>
+                              <td class="pb-3">Placa</th> 
+                              <td class="pb-3">Estado</th> 
+                              <td class="pb-3">Documentos faltantes</th> 
+                              <td class="pb-3">Fecha de creación</th> 
+                              <td class="pb-3">Acción</th> 
+                              <td class="pb-3">Usuario</th> 
+                          </tr>
+                      </thead>
+                      <tbody class="tbody-lines">
+                          <!-- * estructura de cada fila -->
+                          <tr class="f-Roboto" style="border:0 solid #072f35;color:#536f73;">
+                              <td class="" >1234</td>
+                              <td class="" >SDG435</td>
+                              <td class=" " >
+                                  <div class="form-check form-switch text-center px-4 pt-1">
+                                      <input id="estado"class="form-check-input m-0" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                                  </div>
+                              </td>
+                              <td class="" >Vació</td>
+                              <td class="" >dd/mm/aaaa</td>
+                              <td class="p-1 ">
+                                  <a href="" class="btn rounded-pill f-RobotoC px-3 py-0 " style="background-color:#072f35;color:#45e6dd;font-weight:400;font-size: 15px;">ENVIAR CARPETA</a>
+                              </td>
+                              <td class="" >SGOMEZ</td>
+                          </tr>
+                           <!-- *end -->
+                           <!-- !ejemplos -->
+                           <tr class="f-Roboto" style="border:0 solid #072f35;color:#536f73;">
+                              <td class="" >1234</td>
+                              <td class="" >SDG435</td>
+                              <td class=" " >
+                                  <div class="form-check form-switch text-center px-4 pt-1">
+                                      <input id="estado"class="form-check-input m-0" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled"  disabled>
+                                  </div>
+                              </td>
+                              <td class="" >Vació</td>
+                              <td class="" >dd/mm/aaaa</td>
+                              <td class=" ">
+                                  
+                              </td>
+                              <td class="" >SGOMEZ</td>
+                          </tr>
+                          <tr class="f-Roboto" style="border:0 solid #072f35;color:#536f73;">
+                              <td class="" >1234</td>
+                              <td class="" >SDG435</td>
+                              <td class=" " >
+                                  <div class="form-check form-switch text-center px-4 pt-1">
+                                      <input id="estado"class="form-check-input m-0" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                                  </div>
+                              </td>
+                              <td class="" >Vació</td>
+                              <td class="" >dd/mm/aaaa</td>
+                              <td class=" ">
+                                  <a href="" class="btn rounded-pill f-RobotoC px-3 py-0 " style="background-color:#072f35;color:#45e6dd;font-weight:400;font-size: 15px;">ENVIAR CARPETA</a>
+                              </td>
+                              <td class="" >SGOMEZ</td>
+                          </tr>
+                          <!-- ! -->
+                      </tbody>
+                  </table>
+              </div>
+              <div class="row mt-5 mb-2  justify-content-center">
+                  <div class="col-md-6 text-center">
+                      <a href="" class="btn rounded-pill f-RobotoC px-5 mb-4 py-1" style="background-color:#072f35;color:#45e6dd;font-weight:400;letter-spacing: -0.5px;">VOLVER A INICIO</a>
+                      <div class="text-center logo-btn">
+                          <img src="./assets/img/olx-autos-logo-gris.svg" alt="" style="width: 30%;">
+                      </div>
+                  </div>
+              </div> 
+          </div>
+      </div>
+  </div>
+    <!-- Fin de componente 10 -->
+
+    <!-- Componente 11 -->
+    <div class="container py-5 comp11">
+      <div class="row justify-content-center">
+          <div class="col-md-10 py-3 px-5" style="background-color: #fff;border-radius:5px;">
+              <h5 class="text-center f-RobotoC fw-bolder mb-4 mt-3" style="color:#072f35 ;" >Envío de carpetas</h5>
+              <div class="row justify-content-center">
+                  <div class="col-md-4 px-0 mt-5 f-Roboto" style="display:flex;flex-direction:column;justify-content: space-between;">
+                      <div  class="row mx-0 mb-4 mt-2" style="color: #536f73;">
+                          <div class="col-3 pt-1 px-0">
+                              <h6 class="fw-bolder m-0" >Código</h6>
+                          </div>
+                          <div class="col-6 rounded-pill text-center fw-bolder pt-1" style="background-color:#e0e0e0;">
+                              <span>1234</span>
+                          </div>
+                          <div class="col-3">
+                              <img src="./assets/img/icono-carpeta.svg" alt="" style="width:30px ;">
+                          </div>
+                      </div>
+                      <div class="px-0 mt-2" style="color: #536f73;">
+                          <h6 class="fw-bolder m-0 my-3" >Destino de carpeta (seleccione una)</h6>
+                          <div class="row mx-0">
+                              <div class="col-8">
+                                  <div class="form-check f-Roboto">
+                                      <input class="form-check-input" type="radio" name="DestinoCarpeta" id="sedes" checked >
+                                      <label class="form-check-label" for="sedes">Sedes Olx</label>
+                                  </div>
+                                  <div class="form-check">
+                                      <input class="form-check-input" type="radio" name="DestinoCarpeta" id="tramitadores" >
+                                      <label class="form-check-label" for="tramitadores">Tramitadores</label>
+                                  </div>
+                              </div>
+                              <div class="col-4 text-center">
+                                  <img src="./assets/img/icono-envio.svg" alt="" style="width:50px;">
+                              </div>
+                          </div>
+  
+                      </div>
+                  </div>
+                  <div class="col-md-4 f-Roboto text-center pb-3" style="display:flex;flex-direction:column;justify-content: space-between;">
+                      <div class="px-0" style="color: #536f73;">
+                          <h6 class="fw-bolder m-0 my-3 " >Seleccione transportista</h6>
+                          <select class="form-select" aria-label="Default select example">
+                              <option selected>Selecione</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                          </select>
+                      </div>
+                      <div class="px-0" style="color: #536f73;">
+                          <h6 class="fw-bolder m-0 my-3 " >Seleccione Dirección origen</h6>
+                          <select class="form-select" aria-label="Default select example">
+                              <option selected>Selecione</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="col-md-4 f-Roboto text-center pb-3" style="display:flex;align-items:flex-end;">
+                      <div class="px-0 " style="color: #536f73;width: 100%;">
+                          <h6 class="fw-bolder m-0 my-3 " >Seleccione Dirección destino</h6>
+                          <select class="form-select" aria-label="Default select example">
+                              <option selected>Selecione</option>
+                              <option value="1">One</option>
+                              <option value="2">Two</option>
+                              <option value="3">Three</option>
+                          </select>
+                      </div>
+                  </div>
+  
+              </div>
+              <div class="row mt-5 mb-2 ">
+                  <div class="col-md-3"></div>
+                  <div class="col-md-6 text-center">
+                      <a href="" class="btn rounded-pill f-RobotoC px-5 py-1" style="background-color:#072f35;color:#45e6dd;font-weight:400;letter-spacing: -0.5px;">ENVIAR</a>
+                  </div>
+                  <div class="col-md-3 logo-btn">
+                      <div class="text-center">
+                      <img src="./assets/img/olx-autos-logo-gris.svg" alt="" style="width: 64%;">
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!-- Fin compoente 11 -->
+
+    <!-- Componente 12 -->
+    <div class="container py-5">
+      <div class="row justify-content-center">
+          <div class="col-md-12 py-3 px-5" style="background-color: #fff;border-radius:5px;">
+              <h5 class="text-center f-RobotoC fw-bolder mb-5 mt-3" style="color:#072f35 ;" >Carpetas en custodia del transportista</h5>
+              <div class="table-responsive-xxl" style="max-height: 300px; overflow-y: auto;">
+                  <table  class="text-center  align-middle table-borderless" style="min-width: 100%;">
+                      <thead class=" f-Roboto fw-bolder "style="color:#536f73;" >
+                          <tr>
+                              <td class="pb-3">Código</th>
+                              <td class="pb-3">Placa</th> 
+                              <td class="pb-3">Estado</th> 
+                              <td class="pb-3">Fecha de solicitud</th> 
+                              <td class="pb-3">Dirección de origen</th> 
+                              <td class="pb-3">Dirección de destino</th> 
+                              <td class="pb-3">Transportista</th> 
+                              <td class="pb-3">Acción</th> 
+                          </tr>
+                      </thead>
+                      <tbody class="tbody-lines">
+                          <!-- * estructura de cada fila -->
+                          <tr class="f-Roboto" style="border:0 solid #072f35;color:#536f73;">
+                              <td class=" ">1234</td>
+                              <td class=" ">SDG435</td>
+                              <td class=" ">Recogido</td>
+                              <td class=" ">dd/mm/aaaa</td>
+                              <td class=" ">OLX Bogotá</td>
+                              <td class=" ">OLX Medellin</td>
+                              <td class=" ">Gacela</td>
+                              <td class="p-1 ">
+                                  <a href="" class="btn rounded-pill f-RobotoC px-3 py-0 " style="background-color:#072f35;color:#45e6dd;font-weight:400;font-size: 15px;">CARPETA RECOGIDA</a>
+                              </td>
+                          </tr>
+                           <!-- *end -->
+                           <!-- !ejemplos -->
+                           <tr class="f-Roboto" style="border:0 solid #072f35;color:#536f73;">
+                              <td class=" ">1234</td>
+                              <td class=" ">SDG435</td>
+                              <td class=" ">Sin recoger</td>
+                              <td class=" ">dd/mm/aaaa</td>
+                              <td class=" ">OLX Bogotá</td>
+                              <td class=" ">OLX Medellin</td>
+                              <td class=" ">Gacela</td>
+                              <td class="p-1 ">
+                              </td>
+                          </tr>
+                          <tr class="f-Roboto" style="border:0 solid #072f35;color:#536f73;">
+                              <td class=" ">1234</td>
+                              <td class=" ">SDG435</td>
+                              <td class=" ">Recogido</td>
+                              <td class=" ">dd/mm/aaaa</td>
+                              <td class=" ">OLX Bogotá</td>
+                              <td class=" ">OLX Medellin</td>
+                              <td class=" ">Gacela</td>
+                              <td class="p-1 ">
+                                  <a href="" class="btn rounded-pill f-RobotoC px-3 py-0 " style="background-color:#072f35;color:#45e6dd;font-weight:400;font-size: 15px;">CARPETA RECOGIDA</a>
+                              </td>
+                          </tr>
+                          
+                          <!-- ! -->
+                      </tbody>
+                  </table>
+              </div>
+              <div class="row mt-5 mb-2  justify-content-center">
+                  <div class="col-md-6 text-center">
+                      <a href="" class="btn rounded-pill f-RobotoC px-5 mb-4 py-1" style="background-color:#072f35;color:#45e6dd;font-weight:400;letter-spacing: -0.5px;">VOLVER A INICIO</a>
+                      <div class="text-center logo-btn">
+                          <img src="olx-autos-logo-gris.svg" alt="" style="width: 30%;">
+                      </div>
+                  </div>
+              </div> 
+          </div>
+      </div>
+  </div>
+    <!-- Fin componente 12 -->
+
+    <!-- Componente 13 -->
+    <div class="container py-5">
+      <div class="row justify-content-center">
+          <div class="py-3 px-5 mx-auto" style="background-color: #fff;border-radius:5px;max-width:470px">
+              <h5 class="text-center f-RobotoC fw-bolder mb-5 mt-3" style="color:#072f35 ;" >Recepción y reporte de novedades a carpeta</h5>
+              <div  class=" f-Roboto row mx-0 mb-4 mt-2" style="color: #536f73;">
+                  <div class="col-2 pt-2 px-0 me-2">
+                      <h6 class="fw-bolder m-0 text-center" >Código</h6>
+                  </div>
+                  <div class="col-4 rounded-pill fw-bolder pt-1" style="background-color:#e0e0e0;">
+                      <span>1234</span>
+                  </div>
+                  <div class="col-3">
+                      <img src="./assets/img/icono-carpeta.svg" alt="" style="width:30px ;">
+                  </div>
+              </div>
+              <h6 class="f-Roboto fw-bolder m-0 mb-2 ps-1"style="color:#536f73;">Información de envío</h6>
+  
+              <div class="table-responsive" >
+                  <!-- !ESPACIO PARA LA INFO DE ENVIO -->
+                  <!-- <div style="height: 134px">
+                      <p class="f-Roboto" style="color:#536f73;">No hay información de envío</p>
+                  </div> -->
+                
+                  <table  class="  align-middle table-borderless" style="min-width: 100%;">
+                      <thead >
+                          <tr>
+                          </tr>
+                      </thead>
+                      <tbody class="tbody-lines">
+                          <tr class="f-Roboto" style="border:0 solid #072f35;color:#536f73;">
+                              <td class=" ">Transportista:</td>
+                              <td class=" ">Gacela</td>
+                          </tr> <tr class="f-Roboto" style="border:0 solid #072f35;color:#536f73;">
+                              <td class=" ">Dirección origen:</td>
+                              <td class=" ">Olx Bogotá / Madrid</td>
+                          </tr>
+                          </tr> <tr class="f-Roboto" style="border:0 solid #072f35;color:#536f73;">
+                              <td class=" ">Dirección destino:</td>
+                              <td class=" ">Olx Bogotá</td>
+                          </tr>
+                          </tr> <tr class="f-Roboto" style="border:0 solid #072f35;color:#536f73;">
+                              <td class=" ">Fecha de solicitud:</td>
+                              <td class=" ">dd/mm/aa</td>
+                          </tr>
+                          </tr> <tr class="f-Roboto" style="border:0 solid #072f35;color:#536f73;">
+                              <td class=" ">Estado:</td>
+                              <td class=" ">Sin entregar</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <!-- !FIN ESPACIO PARA LA INFO DE ENVIO -->
+              </div>
+              <div class="row mt-2">
+                  <div class="col-8 pt-2">
+                      <h6 class="f-Roboto fw-bolder m-0 ps-1"style="color:#536f73;">Estado de recepción</h6>
+                  </div>
+                  <div class="col-4 text-end">
+                      <img src="./assets/img/icono-envio.svg" alt="" style="width:50px;">
+                  </div>
+              </div>
+              
+              <div class="row mt-3 mb-2  justify-content-center">
+                  <div class="col-md-6 text-center px-0 ">
+                      <a href="" class="btn rounded-pill f-RobotoC px-4 mb-1 py-1" style="background-color:#072f35;color:#45e6dd;font-weight:400;">CONFIRMAR ENTREGA</a>
+                  </div>
+                  <div class="col-md-6 text-center px-0">
+                      <a href="" class="btn rounded-pill f-RobotoC px-4 mb-1 py-1" style="background-color:#072f35;color:#45e6dd;font-weight:400;">REGISTRAR NOVEDAD</a>
+                  </div>
+                  <div class="text-center mt-4 logo-btn" >
+                      <img src="./assets/img/olx-autos-logo-gris.svg" alt="" style="width: 30%;">
+                  </div>
+              </div> 
+          </div>
+      </div>
+  </div>
+    <!-- Fin componente 13 -->
+
+    <!-- componente 14 -->
+    <div class="container py-5 comp14">
+      <div class="row justify-content-center">
+          <div class="col-md-12 py-3 px-5" style="background-color: #fff;border-radius:5px">
+              <h5 class="text-center f-RobotoC fw-bolder mb-3" style="color:#072f35 ;">Reporte de novedades a carpeta</h5>
+              <div class="row justify-content-center mb-3" style="align-items:center;">
+                  <div class="col-md-4">
+                      <div class="row " style="align-items:center;">
+                          <div class="col-5 text-center pt-2"> 
+                              <h5 class="f-RobotoC fw-bolder m-0" style="color:#072f35 ;">Placa</h5>
+                          </div>
+                          <div class="col-7">
+                              <div class="mx-auto rounded mb-1" style="background-color:#ebdb2b;width:150px;padding:3px">
+                              <div class="border border-dark border-2 rounded py-1">
+                                  <h3 class="m-0 text-center f-RobotoC">AAA 123</h3>
+                                  <h6 class="m-0 text-center f-RobotoC fw-bolder" style="font-size: 12px;">BOGOTÁ D.C</h6>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+                  <div class="col-md-4">
+                      <div class="row">
+                          <div class="col-5 pt-2 px-0">
+                              <h5 class="fw-bolder f-RobotoC m-0 text-center" >Carpeta</h5>
+                          </div>
+                          <div class="col-6 rounded-pill fw-bolder pt-1 text-center" style="background-color:#e0e0e0;">
+                              <span>1234</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="row">
+                  <form >
+                      <div class="table-responsive">
+                      <table  class="text-center  align-middle table-borderless" style="min-width:950px; width:100%">
+                          <thead class=" f-Roboto fw-bolder "style="color:#536f73;" >
+                              <tr>
+                                  <td class="pb-3">Documento</th>
+                                  <td class="pb-3">Estado</th> 
+                                  <td class="pb-3">Motivo</th> 
+                              </tr>
+                          </thead>
+                          <tbody class="tbody-lines" style="color: #536f73;">
+                              
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Autorización autenticada de solicitud de prenda</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="Autorización" id="Autorizacio1" value="">
+                                          <label class="form-check-label" for="Autorizacio1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="Autorización" id="Autorizacio2" value="">
+                                          <label class="form-check-label" for="Autorizacio2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="Autorización" id="Autorizacio3" value="">
+                                          <label class="form-check-label" for="Autorizacio3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="Autorización" id="Autorizacio4" value="">
+                                          <label class="form-check-label" for="Autorizacio4">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Carta de instrucciones</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="carta-instrucciones" id="carta-instrucciones1" value="">
+                                          <label class="form-check-label" for="carta-instrucciones1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="carta-instrucciones" id="carta-instrucciones2" value="">
+                                          <label class="form-check-label" for="carta-instrucciones2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="carta-instrucciones" id="carta-instrucciones3" value="">
+                                          <label class="form-check-label" for="carta-instrucciones3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="carta-instrucciones" id="carta-instrucciones4" value="">
+                                          <label class="form-check-label" for="carta-instrucciones4">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Pagaré</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="pagare" id="pagare1" value="">
+                                          <label class="form-check-label" for="pagare1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="pagare" id="pagare2" value="">
+                                          <label class="form-check-label" for="pagare2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="pagare" id="pagare3" value="">
+                                          <label class="form-check-label" for="pagare3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="pagare" id="pagare4" value="">
+                                          <label class="form-check-label" for="pagare4">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Carta de levantamiento de prenda original</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="carta-prtenda" id="carta-prtenda1" value="">
+                                          <label class="form-check-label" for="carta-prtenda1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="carta-prtenda" id="carta-prtenda2" value="">
+                                          <label class="form-check-label" for="carta-prtenda2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="carta-prtenda" id="carta-prtenda3" value="">
+                                          <label class="form-check-label" for="carta-prtenda3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="carta-prtenda" id="carta-prtenda4" value="">
+                                          <label class="form-check-label" for="carta-prtenda4">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Copia cédula de ciudadanía de propietario</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="cedula" id="cedula1" value="">
+                                          <label class="form-check-label" for="cedula1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="cedula" id="cedula2" value="">
+                                          <label class="form-check-label" for="cedula2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="cedula" id="cedula3" value="">
+                                          <label class="form-check-label" for="cedula3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="cedula" id="cedula4" value="">
+                                          <label class="form-check-label" for="cedula4">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Contrato de compra y venta (dos juegos originales)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="compra-venta" id="compra-venta1" value="">
+                                          <label class="form-check-label" for="compra-venta1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="compra-venta" id="compra-venta2" value="">
+                                          <label class="form-check-label" for="compra-venta2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="compra-venta" id="compra-venta3" value="">
+                                          <label class="form-check-label" for="compra-venta3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="compra-venta" id="compra-venta4" value="">
+                                          <label class="form-check-label" for="compra-venta4">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Contrato mandato (dos juegos originales)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="mandato" id="mandato1" value="">
+                                          <label class="form-check-label" for="mandato1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="mandato" id="mandato2" value="">
+                                          <label class="form-check-label" for="mandato2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="mandato" id="mandato3" value="">
+                                          <label class="form-check-label" for="mandato3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="mandato" id="mandato4" value="">
+                                          <label class="form-check-label" for="mandato4">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Copia SOAT</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="SOAT" id="SOAT1" value="">
+                                          <label class="form-check-label" for="SOAT1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="SOAT" id="SOAT2" value="">
+                                          <label class="form-check-label" for="SOAT2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="SOAT" id="SOAT3" value="">
+                                          <label class="form-check-label" for="SOAT3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="SOAT" id="SOAT4" value="">
+                                          <label class="form-check-label" for="SOAT4">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Copia tarjeta de propiedad</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="t-propiedad" id="t-propiedad1" value="">
+                                          <label class="form-check-label" for="t-propiedad1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="t-propiedad" id="t-propiedad2" value="">
+                                          <label class="form-check-label" for="t-propiedad2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="t-propiedad" id="t-propiedad3" value="">
+                                          <label class="form-check-label" for="t-propiedad3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="t-propiedad" id="t-propiedad4" value="">
+                                          <label class="form-check-label" for="t-propiedad4">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">FUN (dos juegos originales)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="FUN" id="FUN1" value="">
+                                          <label class="form-check-label" for="FUN1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="FUN" id="FUN2" value="">
+                                          <label class="form-check-label" for="FUN2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="FUN" id="FUN2" value="">
+                                          <label class="form-check-label" for="FUN3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="FUN" id="FUN4" value="">
+                                          <label class="form-check-label" for="FUN4">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Improntas (cuatro juegos legibles)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="Improntas" id="Improntas1" value="">
+                                          <label class="form-check-label" for="Improntas1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="Improntas" id="Improntas2" value="">
+                                          <label class="form-check-label" for="Improntas2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="Improntas" id="Improntas3" value="">
+                                          <label class="form-check-label" for="Improntas3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="Improntas" id="Improntas4" value="">
+                                          <label class="form-check-label" for="Improntas4">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Poder (Autenticado y firmado)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="Poder" id="Poder1" value="">
+                                          <label class="form-check-label" for="Poder1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="Poder" id="Poder2" value="">
+                                          <label class="form-check-label" for="Poder2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="Poder" id="Poder3" value="">
+                                          <label class="form-check-label" for="Poder3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="Poder" id="Poder4" value="">
+                                          <label class="form-check-label" for="Poder4">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Copias RTM</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="RTM" id="RTM1" value="">
+                                          <label class="form-check-label" for="RTM1">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="RTM" id="RTM2" value="">
+                                          <label class="form-check-label" for="RTM2">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="RTM" id="RTM3" value="">
+                                          <label class="form-check-label" for="RTM3">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="RTM" id="RTM4" value="">
+                                          <label class="form-check-label" for="RTM4">Documento errado</label>
+                                      </div>
+                                      
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                      </div>
+                      <div class="row mt-4 mb-2 logo-btn">
+                          <div class="col-md-4"></div>
+                          <div class="col-md-4">
+                              <div class="text-center">
+                              <img src="./assets/img/olx-autos-logo-gris.svg" alt="" style="width: 57.5%;">
+                              </div>
+                          </div>
+                          <div class="col-md-4 text-end">
+                              <button type="submit" class="btn  rounded-pill f-RobotoC px-5 py-1 mt-2" style="background-color:#072f35;color:#45e6dd;font-weight:400;">REPORTAR NOVEDAD</button>
+                          </div>
+                      </div>
+                  </form> 
+  
+              </div>
+             
+              
+          </div>
+      </div>
+  </div>
+    <!-- Fin componente 14 -->
+
+    <!-- componente 15 -->
+    <div class="container py-5">
+      <div class="row justify-conten-center mx-0">
+          <div class="mx-auto pt-1 pb-3 px-0 text-center " style="background-color: #072f35;border-radius:5px; max-width:350px;">
+              <div class="text-end pb-2" style="margin-top:-12px;margin-right:-7px;">
+                  <a href="" style="background-color:#45e6dd;border-radius:50%;padding:2px 7px;color: #072f35; margin-top:-10px;"><strong>X</strong></a>
+              </div>
+              <h3 class="f-RobotoC" style="color:#45e6dd; font-weight:700;">Observaciones <br>Reporte novedad carpeta</h3>
+              <img src="icono-documento-verde.svg" alt="" style="width:50px;">
+              <form class="mx-auto" style="width:80%;">
+                  <textarea class="form-control my-3"placeholder="Indique observaciones (Opcional)" style="height: 100px; background-color:#ececec;"></textarea>
+                  <button type="submit" class="btn  rounded-pill f-RobotoC px-5 py-1 mt-2" style="background-color:#45e6dd;color:#072f35;font-weight:400;">REPORTAR NOVEDAD</button>
+              </form>
+          </div>
+      </div>
+  </div> 
+    <!-- Fin componente 15 -->
+
+    <!-- Componente 16 -->
+    <div class="container py-5 comp14">
+      <div class="row justify-content-center">
+          <div class="col-md-12 py-3 px-5" style="background-color: #fff;border-radius:5px">
+              <h5 class="text-center f-RobotoC fw-bolder mb-3" style="color:#072f35 ;">Reporte de novedades a carpeta</h5>
+              <div class="row justify-content-center mb-3" style="align-items:center;">
+                  <div class="col-md-4">
+                      <div class="row " style="align-items:center;">
+                          <div class="col-5 text-center pt-2"> 
+                              <h5 class="f-RobotoC fw-bolder m-0" style="color:#072f35 ;">Placa</h5>
+                          </div>
+                          <div class="col-7">
+                              <div class="mx-auto rounded mb-1" style="background-color:#ebdb2b;width:150px;padding:3px">
+                              <div class="border border-dark border-2 rounded py-1">
+                                  <h3 class="m-0 text-center f-RobotoC">AAA 123</h3>
+                                  <h6 class="m-0 text-center f-RobotoC fw-bolder" style="font-size: 12px;">BOGOTÁ D.C</h6>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+                  <div class="col-md-4">
+                      <div class="row">
+                          <div class="col-5 pt-2 px-0">
+                              <h5 class="fw-bolder f-RobotoC m-0 text-center" >Carpeta</h5>
+                          </div>
+                          <div class="col-6 rounded-pill fw-bolder pt-1 text-center" style="background-color:#e0e0e0;">
+                              <span>1234</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="row">
+                  <form >
+                      <div class="table-responsive">
+                      <table  class="text-center  align-middle table-borderless" style="min-width:950px; width:100%">
+                          <thead class=" f-Roboto fw-bolder "style="color:#536f73;" >
+                              <tr>
+                                  <td class="pb-3">Documento</th>
+                                  <td class="pb-3">Estado</th> 
+                                  <td class="pb-3">Motivo</th> 
+                              </tr>
+                          </thead>
+                          <tbody class="tbody-lines" style="color: #536f73;">
+                              
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Contrato de compra y venta (dos juegos originales)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Contrato de compra y venta (dos juegos originales)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Contrato de compra y venta (dos juegos originales)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Contrato de compra y venta (dos juegos originales)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Contrato de compra y venta (dos juegos originales)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Contrato de compra y venta (dos juegos originales)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">No existe</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Mal estado</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Sin firma</label>
+                                      </div>
+                                      <div class="form-check form-check-inline">
+                                          <input class="form-check-input" type="radio" name="" id="" value="">
+                                          <label class="form-check-label" for="">Documento errado</label>
+                                      </div>
+                                  </td>
+                              </tr>
+                              
+                          </tbody>
+                      </table>
+                      </div>
+                      <div class="row mt-4 mb-2 logo-btn">
+                          <div class="col-md-4"></div>
+                          <div class="col-md-4">
+                              <div class="text-center">
+                              <img src="./assets/img/olx-autos-logo-gris.svg" alt="" style="width: 57.5%;">
+                              </div>
+                          </div>
+                          <div class="col-md-4 text-end">
+                              <button type="submit" class="btn  rounded-pill f-RobotoC px-5 py-1 mt-2" style="background-color:#072f35;color:#45e6dd;font-weight:400;">REPORTAR NOVEDAD</button>
+                          </div>
+                      </div>
+                  </form> 
+  
+              </div>
+             
+              
+          </div>
+      </div>
+  </div>
+    <!-- Fin componente 16 -->
+
+    <!-- Compoentes 17 -->
+      <!-- !TARJETA VALIDAR FIRMAS -->
+    <div class="container py-5">
+      <div class="row justify-conten-center mx-0">
+          <div class="mx-auto pt-3 pb-3 px-0 text-center " style="background-color: #072f35;border-radius:5px; max-width:350px;">
+              <h3 class="f-RobotoC" style="color:#fff; font-weight:700;">Validar firmas</h3>
+              <img src="./assets/img/icono-carpeta-lupa-azul.svg" alt="" style="width:50px;">
+              <div class="mb-4 mx-auto" style="width: 80%;">
+                  <p class="my-2 f-Roboto" style="color:#fff ;line-height: 1rem;">Ingrese datos solicitados
+              </div>
+              <form class="mx-auto" style="width:80%;">
+                  <div class="row align-items-center mb-5">
+                      <div class="col-4">
+                      <label for="" class="col-form-label f-RobotoC fs-5" style="color:#fff;">Carpeta</label>
+                      </div>
+                      <div class="col-8">
+                      <input type="" id="" class="form-control rounded-pill form-control-sm" >
+                      </div>
+                  </div>
+                  <a href="" class="btn rounded-pill f-RobotoC px-5 mb-2" style="background-color:#45e6dd;color:#072f35;font-weight:500;">VALIDAR FIRMAS</a>
+              </form>
+              <div class="row justify-content-center mt-2 mb-1">
+                  <img src="./assets/img/olx-autos-logo-verde.svg" alt="" style="width: 40%;">
+              </div>
+          </div>
+      </div>
+    </div> 
+
+    <!-- ! VALIDACION DE FIRMAS -->
+    <div class="container py-5 comp14">
+      <div class="row justify-content-center">
+          <div class="col-md-11 py-3 px-2" style="background-color: #fff;border-radius:5px">
+              <h5 class="text-center f-RobotoC fw-bolder mb-3" style="color:#072f35 ;">Validación de firmas</h5>
+              <div class="row justify-content-center mb-3" style="align-items:center;">
+                  <div class="col-md-4">
+                      <div class="row " style="align-items:center;">
+                          <div class="col-5 text-center pt-2"> 
+                              <h5 class="f-RobotoC fw-bolder m-0" style="color:#072f35 ;">Placa</h5>
+                          </div>
+                          <div class="col-7">
+                              <div class="mx-auto rounded mb-1" style="background-color:#ebdb2b;width:150px;padding:3px">
+                              <div class="border border-dark border-2 rounded py-1">
+                                  <h3 class="m-0 text-center f-RobotoC">AAA 123</h3>
+                                  <h6 class="m-0 text-center f-RobotoC fw-bolder" style="font-size: 12px;">BOGOTÁ D.C</h6>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+                  <div class="col-md-4">
+                      <div class="row">
+                          <div class="col-5 pt-2 px-0">
+                              <h5 class="fw-bolder f-RobotoC m-0 text-center" >Carpeta</h5>
+                          </div>
+                          <div class="col-6 rounded-pill fw-bolder pt-1 text-center" style="background-color:#e0e0e0;">
+                              <span>1234</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="row">
+                  <form >
+                      <div class="table-responsive">
+                      <table  class="tbody-lines text-center  align-middle table-borderless" style="min-width:950px; width:100%">
+                          <thead class=" f-Roboto fw-bolder "style="color:#536f73;" >
+                              <tr>
+                                  <td class="pb-1">Documento</th>
+                                  <td class="pb-1">Existe documento</th> 
+                                  <td class="pb-1">Firma</th> 
+                                  <td class="pb-1">Reportes</th> 
+                                  
+                              </tr>
+                          </thead>
+                          <tbody class="" style="color: #536f73;">
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Copia cédula de ciudadanía de propietario</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <select class="form-select px-3 py-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                          <option selected>Seleccione SI/NO</option>
+                                          <option value="1">SI</option>
+                                          <option value="2">NO</option>
+                                      </select>
+                                  </td>
+                                  <td>
+                                      <a class="btn  rounded-pill f-RobotoC px-2 py-0 " style="background-color:#072f35;color:#45e6dd;font-weight:400;font-size:.8rem;">REPORTAR NOVEDAD</a>
+                                  </td>
+                              </tr>  
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Contrato de compra y venta (dos juegos originales)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <select class="form-select px-3 py-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                          <option selected>Seleccione SI/NO</option>
+                                          <option value="1">SI</option>
+                                          <option value="2">NO</option>
+                                      </select>
+                                  </td>
+                                  <td>
+                                      <a class="btn  rounded-pill f-RobotoC px-2 py-0 " style="background-color:#072f35;color:#45e6dd;font-weight:400;font-size:.8rem;">REPORTAR NOVEDAD</a>
+                                  </td>
+                              </tr>  
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">FUN (dos juegos originales)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <select class="form-select px-3 py-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                          <option selected>Seleccione SI/NO</option>
+                                          <option value="1">SI</option>
+                                          <option value="2">NO</option>
+                                      </select>
+                                  </td>
+                                  <td>
+                                      <a class="btn  rounded-pill f-RobotoC px-2 py-0 " style="background-color:#072f35;color:#45e6dd;font-weight:400;font-size:.8rem;">REPORTAR NOVEDAD</a>
+                                  </td>
+                              </tr>  
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Contrato de inscripción de prendas (dos juegos Olx financiera)</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <select class="form-select px-3 py-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                          <option selected>Seleccione SI/NO</option>
+                                          <option value="1">SI</option>
+                                          <option value="2">NO</option>
+                                      </select>
+                                  </td>
+                                  <td>
+                                      <a class="btn  rounded-pill f-RobotoC px-2 py-0 " style="background-color:#072f35;color:#45e6dd;font-weight:400;font-size:.8rem;">REPORTAR NOVEDAD</a>
+                                  </td>
+                              </tr>  
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Copia y cédula del comprador</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <select class="form-select px-3 py-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                          <option selected>Seleccione SI/NO</option>
+                                          <option value="1">SI</option>
+                                          <option value="2">NO</option>
+                                      </select>
+                                  </td>
+                                  <td>
+                                      <a class="btn  rounded-pill f-RobotoC px-2 py-0 " style="background-color:#072f35;color:#45e6dd;font-weight:400;font-size:.8rem;">REPORTAR NOVEDAD</a>
+                                  </td>
+                              </tr>  
+                              <tr class="f-Roboto" style="border:0 solid #072f35;">
+                                  <td class="  text-start">Copia cámara de comercio del comprador</td>
+                                  <td class=" ">SI</td>
+                                  <td class=" ">
+                                      <select class="form-select px-3 py-0 f-Roboto text-center" aria-label="Default select example" style="box-shadow:none;border:none">
+                                          <option selected>Seleccione SI/NO</option>
+                                          <option value="1">SI</option>
+                                          <option value="2">NO</option>
+                                      </select>
+                                  </td>
+                                  <td>
+                                      <a class="btn  rounded-pill f-RobotoC px-2 py-0 " style="background-color:#072f35;color:#45e6dd;font-weight:400;font-size:.8rem;">REPORTAR NOVEDAD</a>
+                                  </td>
+                              </tr>  
+                          </tbody>
+                      </table>
+                      </div>
+                      <div class="row mt-4 mb-2 logo-btn">
+                          <div class="col-md-4"></div>
+                          <div class="col-md-4">
+                              <div class="text-center">
+                              <img src="./assets/img/olx-autos-logo-gris.svg" alt="" style="width: 53.5%;">
+                              </div>
+                          </div>
+                          <div class="col-md-4 text-end">
+                              <button type="submit" class="btn  rounded-pill f-RobotoC px-5 py-0 mt-2 mx-3" style="background-color:#45e6dd;color:#072f35;font-weight:400;">Guardar</button>
+                          </div>
+                      </div>
+                  </form> 
+
+              </div>
+            
+              
+          </div>
+      </div>
+    </div>
+    <!-- Fin componente 17 -->
+
+    <!-- Componente 18 -->
+    <div class="container py-5 comp11">
+      <div class="row justify-content-center">
+          <div class="col-md-6 py-3 px-2" style="background-color: #fff;border-radius:5px">
+              <h5 class="text-center f-RobotoC fw-bolder mb-3" style="color:#072f35 ;">Solicitud de trámites</h5>
+              <div class="row justify-content-center mb-3" style="align-items:center;">
+                  <div class="col-md-6">
+                      <div class="row " style="align-items:center;">
+                          <div class="col-5 text-center pt-2"> 
+                              <h5 class="f-RobotoC fw-bolder m-0" style="color:#072f35 ;">Placa</h5>
+                          </div>
+                          <div class="col-7">
+                              <div class="mx-auto rounded mb-1" style="background-color:#ebdb2b;width:150px;padding:3px">
+                              <div class="border border-dark border-2 rounded py-1">
+                                  <h3 class="m-0 text-center f-RobotoC">AAA 123</h3>
+                                  <h6 class="m-0 text-center f-RobotoC fw-bolder" style="font-size: 12px;">BOGOTÁ D.C</h6>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+                  <div class="col-md-6">
+                      <div class="row">
+                          <div class="col-5 pt-2 px-0">
+                              <h5 class="fw-bolder f-RobotoC m-0 text-center" >Carpeta</h5>
+                          </div>
+                          <div class="col-6 rounded-pill fw-bolder pt-1 text-center" style="background-color:#e0e0e0;">
+                              <span>1234</span>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+              <div class="row">
+                 
+                  <form class="mx-auto" style="width:85%;">
+                      <h6 class="f-Roboto fw-bolder m-0 mb-2 ps-1"style="color:#536f73;">Grupo de usuario</h6>
+                      <div class="row" style="align-items: center;">
+                          <div class="col-8">
+                              <div class="form-check f-Roboto">
+                                  <input class="form-check-input" type="radio" name="solicitud-tramite" id="1"  >
+                                  <label class="form-check-label" for="1">Solicitud de control de pagos</label>
+                              </div>
+                              <div class="form-check f-Roboto">
+                                  <input class="form-check-input" type="radio" name="solicitud-tramite" id="2" >
+                                  <label class="form-check-label" for="2">Solicitud de improntas</label>
+                              </div>
+                              <div class="form-check f-Roboto">
+                                  <input class="form-check-input" type="radio" name="solicitud-tramite" id="3" >
+                                  <label class="form-check-label" for="3">Solicitud logística</label>
+                              </div>
+                              <div class="form-check f-Roboto">
+                                  <input class="form-check-input" type="radio" name="solicitud-tramite" id="4" >
+                                  <label class="form-check-label" for="4">Solicitud documentos SAC</label>
+                              </div>
+                              <div class="form-check f-Roboto">
+                                  <input class="form-check-input" type="radio" name="solicitud-tramite" id="5" >
+                                  <label class="form-check-label" for="5">Solicitud Dealer Zone</label>
+                              </div>
+                              <div class="form-check f-Roboto">
+                                  <input class="form-check-input" type="radio" name="solicitud-tramite" id="6" >
+                                  <label class="form-check-label" for="6">Solicitud vitrina</label>
+                              </div>
+                              <div class="form-check f-Roboto">
+                                  <input class="form-check-input" type="radio" name="solicitud-tramite" id="7" >
+                                  <label class="form-check-label" for="7">Solicitud trámites</label>
+                              </div>
+                             
+                          </div>
+                          <div class="col-4">
+                              <img src="./assets/img/icono-personas-5.svg" alt="" style="width: 7rem;">
+                          </div>
+  
+                      </div>
+                      
+                      <div class="row mt-4 mb-2 ">
+                          <div class="col-md-4"></div>
+                          <div class="col-md-4 text-center">
+                              <button type="submit" class="btn  rounded-pill f-RobotoC px-4 py-0 mt-0 fs-5" style="background-color:#45e6dd;color:#072f35;font-weight:400;width:100%;">Ingresar</button>
+                          </div>
+                          <div class="col-md-4 text-end logo-btn">
+                              <div class="text-center">
+                                  <img src="./assets/img/olx-autos-logo-gris.svg" alt="" style="width: 100%;">
+                              </div>
+                              
+                          </div>
+                      </div>
+                  </form> 
+  
+              </div>
+             
+              
+          </div>
+      </div>
+  </div>
+    <!-- Fin componente 18 -->
+
+    <!-- Componente 19 -->
+    <div class="container py-5">
+      <div class="row justify-content-center">
+          <div class="col-md-10 py-3 px-5" style="background-color: #fff;border-radius:5px">
+              <h5 class="text-center f-RobotoC fw-bolder mb-5 mt-1" style="color:#072f35 ;" >Solicitud control de pagos</h5>
+              <form action="">
+                  <div class="table-responsive">
+                      <table class="align-middle table-borderless mx-auto" style="width:100% ;min-width:500px;">
+                          <thead class="f-Roboto fw-bolder"style="color:#536f73;" >
+                              <tr>
+                                  <td class="col-4">Trámite</th>
+                                  <td class="col-8">Observaciones</th> 
+                              </tr>
+                          </thead>
+                          <tbody class="tbody-lines">
+                              <tr style="border:0 solid #072f35">
+                                  <td class=" p-1 f-Roboto" style="color:#536f73;">
+                                      <div class="form-check f-Roboto">
+                                          <input class="form-check-input" type="radio" name="solicitud-tramit" id="11"  value="">
+                                          <label class="form-check-label" for="11">SOAT</label>
+                                      </div>
+                                  </td>
+                                  <td class="p-1">
+                                      <input class="form-control form-control-sm rounded-pill" type="text"  aria-label=".form-control-sm example" style="background-color:#e0e0e0;">
+                                  </td>
+                              </tr>
+                              <tr style="border:0 solid #072f35">
+                                  <td class="p-1 f-Roboto" style="color:#536f73;">
+                                      <div class="form-check f-Roboto">
+                                          <input class="form-check-input" type="radio" name="solicitud-tramit" id="21" value="" >
+                                          <label class="form-check-label" for="21">Impuestos</label>
+                                      </div>
+                                  </td>
+                                  <td class="p-1">
+                                      <input class="form-control form-control-sm rounded-pill py-0" type="text"  aria-label=".form-control-sm example" style="background-color:#e0e0e0;">
+                                  </td>
+                              </tr>
+                              <tr style="border:0 solid #072f35">
+                                  <td class="p-1 f-Roboto" style="color:#536f73;">
+                                      <div class="form-check f-Roboto">
+                                          <input class="form-check-input" type="radio" name="solicitud-tramit" id="31"  value="">
+                                          <label class="form-check-label" for="31">Comparendos</label>
+                                      </div>
+                                  </td>
+                                  <td class="p-1">
+                                      <input class="form-control form-control-sm rounded-pill py-0" type="text"  aria-label=".form-control-sm example" style="background-color:#e0e0e0;">
+                                  </td>
+                              </tr>
+                              <tr style="border:0 solid #072f35">
+                                  <td class="p-1 f-Roboto" style="color:#536f73;">
+                                      <div class="form-check f-Roboto">
+                                          <input class="form-check-input" type="radio" name="solicitud-tramit" id="41" value="" >
+                                          <label class="form-check-label" for="41">Prenda</label>
+                                      </div>
+                                  </td>
+                                  <td class="p-1">
+                                      <input class="form-control form-control-sm rounded-pill py-0" type="text"  aria-label=".form-control-sm example" style="background-color:#e0e0e0;">
+                                  </td>
+                              </tr>
+                          </tbody>
+                      </table>
+                  </div>
+                  <div class="row mt-4 mb-2 " style="align-items: center;">
+                      <div class="col-md-3"></div>
+                      <div class="col-md-6 text-center">
+                          <button href="" type="submit" class="btn rounded-pill f-RobotoC px-5 py-1" style="background-color:#072f35;color:#45e6dd;font-weight:400;min-width:60%;">ENVIAR</button>
+                      </div>
+                      <div class="col-md-3 logo-btn">
+                          <div class="text-center">
+                          <img src="./assets/img/olx-autos-logo-gris.svg" alt="" style="width: 87.5%;">
+                          </div>
+                      </div>
+                  </div>
+              </form>
+             
+              
+          </div>
+      </div>
+  </div>
+    <!-- Fin componente 19 -->
+
+    <!-- Componentes 20 -->
+    <div class="container py-5">
+      <div class="row justify-conten-center mx-0">
+          <div class="mx-auto pt-3 pb-3 px-4 " style="background-color: #fff;border-radius:5px; max-width:400px;color:#536f73">
+              <h6 class="f-Roboto fw-bolder m-0 mb-2 ps-1"style="color:#536f73;">Elija una opción</h6>
+              <div class="ps-2">
+                  <div class="form-check f-Roboto">
+                      <input class="form-check-input" type="radio" name="solicitud-tramite" id="1"  >
+                      <label class="form-check-label" for="1">Documento de compra (Servicio al cliente)</label>
+                  </div>
+                  <div class="form-check f-Roboto">
+                      <input class="form-check-input" type="radio" name="solicitud-tramite" id="2" >
+                      <label class="form-check-label" for="2">Documento de venta (Dealer zone)</label>
+                  </div>
+                  <div class="form-check f-Roboto">
+                      <input class="form-check-input" type="radio" name="solicitud-tramite" id="2" >
+                      <label class="form-check-label" for="2">Documento de venta (Vitrina)</label>
+                  </div>
+                  <div class="form-check f-Roboto">
+                      <input class="form-check-input" type="radio" name="solicitud-tramite" id="2" >
+                      <label class="form-check-label" for="2">Trámites</label>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div> 
+  <!-- !RADICACION DE CASOS -->
+  <div class="container py-5">
+      <div class="row justify-conten-center mx-0">
+          <div class="mx-auto pt-3 pb-3 px-4 text-center " style="background-color: #072f35;border-radius:5px; max-width:400px;">
+              <h3 class="f-RobotoC" style="color:#45e6dd; font-weight:700;">Radicación de casos</h3>
+              <img src="./assets/img/icono-documento-verde.svg" alt="" style="width:50px;">
+              <div class="m-auto col-md-12 rounded f-Roboto my-3 py-2" style="background-color:#ececec;min-height:120px; color:#536f73;">
+                  <div class="col text-center">
+                      <p>Caso cerrado</p>
+                      <p>(Descripción trámite) - (Inserte número de caso)</p>
+                  </div>
+  
+              </div>
+                  
+                  <a href="" class="btn rounded-pill f-RobotoC px-5 mb-2" style="background-color:#45e6dd;color:#072f35;font-weight:500;">ACEPTAR</a>
+              
+              <div class="row justify-content-center mt-2 mb-1">
+                  <img src="./assets/img/olx-autos-logo-verde.svg" alt="" style="width: 40%;">
+              </div>
+          </div>
+      </div>
+  </div> 
+  <!-- !CONFIRMACIÓN DE TRAMITES -->
+  <div class="container py-5">
+      <div class="row justify-conten-center mx-0">
+          <div class="mx-auto pt-3 pb-3 px-4 text-center " style="background-color: #fff;border-radius:5px; max-width:480px;color:#536f73">
+              <h5 class="text-center f-RobotoC fw-bolder mb-5 mt-1" style="color:#072f35 ;" >Confirmación de trámites</h5>
+              <form action="">
+                  <div  class=" f-Roboto row mx-0 mb-5 mt-2" style="color: #536f73;align-items: center;">
+                      <div class="col-md-4 px-0 mb-1">
+                          <h6 class="fw-bolder m-0 text-center" >Ingrese usuario</h6>
+                      </div>
+                      <div class="col-md-4 px-0 mb-1">
+                          <input type="" id="" class="py-0 form-control rounded-pill fw-bolder form-control-sm" style="background-color: #e0e0e0;">
+                      </div>
+                      <div class="col-md-4 px-0 pb-1 mb-1">
+                          <img src="./assets/img/icono-personas-2.svg" alt="" style="width:4rem;">
+                      </div>
+                  </div>
+                  <button type="submit" class="btn rounded-pill f-RobotoC px-5 mb-2 py-1" style="background-color:#45e6dd;color:#072f35;">Cargar lista de trámites</button>
+              </form>
+          </div>
+      </div>
+  </div> 
+    <!-- Fin componente 20 -->
+
+    <!-- Componente 21 -->
+    <div class="container py-5 comp21 ">
+      <div class="row justify-conten-center mx-0">
+          <div class="mx-auto pt-1 pb-3 px-0 text-center " style="background-color: #072f35;border-radius:5px; max-width:350px;">
+              <div class="text-end pb-2 fs-5" style="margin-top:-12px;margin-right:-7px;">
+                  <a href="" style="background-color:#45e6dd;border-radius:50%;padding:2px 8px;color: #072f35; margin-top:-10px;"><strong>X</strong></a>
+              </div>
+              <h3 class="f-RobotoC" style="color:#45e6dd; font-weight:700;">Adjuntar<br>evidencia trámite</h3>
+              <img src="./assets/img/icono-clip.svg" alt="" style="width:50px;">
+              <form class="mx-auto mt-3" style="width:80%;">
+                  <div class="mb-3 file-select">
+                      <input class="form-control" type="file" id="formFileMultiple" multiple>
+                  </div>
+                  <div class="mb-3">
+                      <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+                      <input class="form-control" type="file" id="formFileMultiple" multiple>
+                  </div>
+                  <button type="submit" class="btn  rounded-pill f-RobotoC px-5 py-1 mt-2" style="background-color:#45e6dd;color:#072f35;font-weight:400;">CONFIRMAR TRÁMITE
+                  </button>
+                  
+              </form>
+              <div class="row justify-content-center mt-2 mb-1 mt-3">
+                  <img src="./assets/img/olx-autos-logo-verde.svg" alt="" style="width: 40%;">
+              </div>
+          </div>
+      </div>
+  </div> 
+    <!-- Fin componente 21 -->
+
+    <!-- componente 22 -->
+    <div class="container-fluid py-5 comp22">
+      <div class="row justify-content-center px-3">
+          <div class="col-md-12 py-3 mx-2" style="background-color: #fff;border-radius:5px">
+              <h5 class="text-center f-RobotoC fw-bolder mb-4 mt-1" style="color:#072f35 ;">Panel visualizador</h5>
+       
+              <div class="table-responsive">
+                  <table class="tbody-lines table text-center table-borderless mx-auto table-striped" style="width:100%;font-size: 0.8rem;border-radius: 5px;">
+                      <thead class="f-Roboto" style="color:#fff;background-color:#3c66ff;" >
+                          <tr>
+                              <td class="">Código</th>
+                              <td class="">Placa</th>
+                              <td class="">Sede fin</th> 
+                              <td class="">Carpeta completa</th> 
+                              <td class="">Proceso actual</th> 
+                              <td class="">Novedad</th> 
+                              <td class="">Descripcion novedad</th> 
+                              <td class="">Prenda</th> 
+                              <td class="">Fecha solicitud trámite</th> 
+                              <td class="px-1">
+                                  <div class="" style="width:6rem;">
+                                      <div class="form-check form-check-inline m-0 ">
+                                          <input class="form-check-input radio-green" type="radio" checked disabled>
+                                      </div>
+                                      <div class="form-check form-check-inline m-0">
+                                          <input class="form-check-input radio-orange" type="radio" checked disabled>
+                                      </div>
+                                      <div class="form-check form-check-inline m-0 ">
+                                          <input class="form-check-input radio-red" type="radio" checked disabled>
+                                      </div>
+                                  </div>
+                                  
+                              </th> 
+                              <td class="">Trámites solicitados</th> 
+                              <td class="">Usuario</th> 
+                              <td class="">Usuario responsable trámite</th> 
+                              <td class="">Caso asociado al trámite</th> 
+                          </tr>
+                      </thead>
+                      <tbody class="">
+                          <tr style="border:0 solid #072f35">
+                              <td class="p-1">14565</td>
+                              <td class="p-1">EOU345</td>
+                              <td class="p-1">Bogotá</td>
+                              <td class="p-1">Sí/No</td>
+                              <td class="p-1">Firmas</td>
+                              <td class="p-1">(Vacío)</td>
+                              <td class="p-1">(Vacío)</td>
+                              <td class="p-1">Sí/No</td>
+                              <td class="p-1">01/01/2022</td>
+                              <td class="p-1">
+                                  <div class="form-check form-check-inline m-0 ">
+                                      <input class="form-check-input radio-green" type="radio" checked disabled>
+                                  </div>
+                                  <div class="form-check form-check-inline m-0 ">
+                                      <input class="form-check-input radio-orange" type="radio" disabled>
+                                  </div>
+                                  <div class="form-check form-check-inline m-0 ">
+                                      <input class="form-check-input radio-red" type="radio" disabled>
+                                  </div>
+                              </td>
+                              <td class="p-1">SOAT</td>
+                              <td class="p-1">AJIMENEZ</td>
+                              <td class="p-1">Bogotá</td>
+                              <td class="p-1">Bogotá</td>
+                          </tr>
+                          <tr style="border:0 solid #072f35">
+                              <td class="p-1">14565</td>
+                              <td class="p-1">EOU345</td>
+                              <td class="p-1">Bogotá</td>
+                              <td class="p-1">Sí/No</td>
+                              <td class="p-1">Firmas</td>
+                              <td class="p-1">(Vacío)</td>
+                              <td class="p-1">(Vacío)</td>
+                              <td class="p-1">Sí/No</td>
+                              <td class="p-1">01/01/2022</td>
+                              <td class="p-1">
+                                  <div class="form-check form-check-inline m-0 ">
+                                      <input class="form-check-input radio-green" type="radio" disabled>
+                                  </div>
+                                  <div class="form-check form-check-inline m-0 ">
+                                      <input class="form-check-input radio-orange" type="radio" checked disabled>
+                                  </div>
+                                  <div class="form-check form-check-inline m-0 ">
+                                      <input class="form-check-input radio-red" type="radio" disabled >
+                                  </div>
+                              </td>
+                              <td class="p-1">SOAT</td>
+                              <td class="p-1">AJIMENEZ</td>
+                              <td class="p-1">Bogotá</td>
+                              <td class="p-1">Bogotá</td>
+                          </tr>
+                          <tr style="border:0 solid #072f35">
+                              <td class="p-1">14565</td>
+                              <td class="p-1">EOU345</td>
+                              <td class="p-1">Bogotá</td>
+                              <td class="p-1">Sí/No</td>
+                              <td class="p-1">Firmas</td>
+                              <td class="p-1">(Vacío)</td>
+                              <td class="p-1">(Vacío)</td>
+                              <td class="p-1">Sí/No</td>
+                              <td class="p-1">01/01/2022</td>
+                              <td class="p-1">
+                                  <div class="form-check form-check-inline m-0 ">
+                                      <input class="form-check-input radio-green" type="radio" disabled>
+                                  </div>
+                                  <div class="form-check form-check-inline m-0 ">
+                                      <input class="form-check-input radio-orange" type="radio" disabled>
+                                  </div>
+                                  <div class="form-check form-check-inline m-0 ">
+                                      <input class="form-check-input radio-red" type="radio" checked disabled>
+                                  </div>
+                              </td>
+                              <td class="p-1">SOAT</td>
+                              <td class="p-1">AJIMENEZ</td>
+                              <td class="p-1">Bogotá</td>
+                              <td class="p-1">Bogotá</td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <div class="row mt-4 mb-2 logo-btn justify-content-end" style="align-items: center;">
+                  
+                  <div class="col-md-10 ">
+                      <div class="text-end">
+                          <div class="form-check form-check-inline ">
+                              <input class="form-check-input radio-green" type="radio" checked disabled>
+                              <label class="form-check-label" for="">Terminado</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input radio-orange" type="radio" checked disabled>
+                              <label class="form-check-label" for="">En proceso</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                              <input class="form-check-input radio-red" type="radio" checked disabled>
+                              <label class="form-check-label" for="">Detenido</label>
+                          </div>
+                      <!-- <img src="olx-autos-logo-gris.svg" alt="" style="width: 59%;"> -->
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!-- fin compoenente 22 -->
+    <!-- !js para que funciones los efectos de la rueda (jquery) -->
+
+    <script src="./assets/js/main.js"></script>
+
+    <!-- vinculación de bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
