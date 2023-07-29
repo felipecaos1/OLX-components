@@ -5,77 +5,77 @@ jQuery( document ).ready(function() {
         function() {
         jQuery( ".porcion1" ).css("fill",'#072f35');
         jQuery( ".p1" ).css("fill",'#5d777b');
-        jQuery( ".t1" ).addClass("show");
+        jQuery( ".t1" ).addClass("show1");
     }, function() {
         jQuery( this ).css("fill",'#3a79f7');
         jQuery( ".p1" ).css("fill",'#e0e0e0');
-        jQuery( ".t1" ).removeClass("show");
+        jQuery( ".t1" ).removeClass("show1");
         }
       );
       jQuery( ".porcion2" ).hover(
         function() {
         jQuery( ".porcion2" ).css("fill",'#072f35');
         jQuery( ".p2" ).css("fill",'#5d777b');
-        jQuery( ".t2" ).addClass("show");
+        jQuery( ".t2" ).addClass("show1");
         }, function() {
         jQuery( this ).css("fill",'#3a79f7');
         jQuery( ".p2" ).css("fill",'#e0e0e0');
-        jQuery( ".t2" ).removeClass("show");
+        jQuery( ".t2" ).removeClass("show1");
         }
       );
     jQuery( ".porcion3" ).hover(
         function() {
         jQuery( ".porcion3" ).css("fill",'#072f35');
         jQuery( ".p3" ).css("fill",'#5d777b');
-        jQuery( ".t3" ).addClass("show");
+        jQuery( ".t3" ).addClass("show1");
         }, function() {
         jQuery( this ).css("fill",'#3a79f7');
         jQuery( ".p3" ).css("fill",'#e0e0e0');
-        jQuery( ".t3" ).removeClass("show");
+        jQuery( ".t3" ).removeClass("show1");
         }
       );
       jQuery( ".porcion4" ).hover(
         function() {
         jQuery( ".porcion4" ).css("fill",'#072f35');
         jQuery( ".p4" ).css("fill",'#5d777b');
-        jQuery( ".t4" ).addClass("show");
+        jQuery( ".t4" ).addClass("show1");
         }, function() {
         jQuery( this ).css("fill",'#3a79f7');
         jQuery( ".p4" ).css("fill",'#e0e0e0');
-        jQuery( ".t4" ).removeClass("show");
+        jQuery( ".t4" ).removeClass("show1");
         }
       );
       jQuery( ".porcion5" ).hover(
         function() {
         jQuery( ".porcion5" ).css("fill",'#072f35');
         jQuery( ".p5" ).css("fill",'#5d777b');
-        jQuery( ".t5" ).addClass("show");
+        jQuery( ".t5" ).addClass("show1");
         }, function() {
         jQuery( this ).css("fill",'#3a79f7');
         jQuery( ".p5" ).css("fill",'#e0e0e0');
-        jQuery( ".t5" ).removeClass("show");
+        jQuery( ".t5" ).removeClass("show1");
         }
       );
       jQuery( ".porcion6" ).hover(
         function() {
         jQuery(  ".porcion6" ).css("fill",'#072f35');
         jQuery( ".p6" ).css("fill",'#5d777b');
-        jQuery( ".t6" ).addClass("show");
+        jQuery( ".t6" ).addClass("show1");
         }, function() {
         jQuery( this ).css("fill",'#3a79f7');
         jQuery( ".p6" ).css("fill",'#e0e0e0');
-        jQuery( ".t6" ).removeClass("show");
+        jQuery( ".t6" ).removeClass("show1");
         }
       );
       jQuery( ".porcion7" ).hover(
         function() {
         jQuery( ".porcion7" ).css("fill",'#072f35');
         jQuery( ".p7" ).css("fill",'#5d777b');
-        jQuery( ".t7" ).addClass("show");
+        jQuery( ".t7" ).addClass("show1");
         }, function() {
         jQuery( this ).css("fill",'#3a79f7');
         jQuery( ".p7" ).css("fill",'#e0e0e0');
-        jQuery( ".t7" ).removeClass("show");
+        jQuery( ".t7" ).removeClass("show1");
         }
       );
 });
@@ -92,5 +92,12 @@ window.addEventListener('DOMContentLoaded', event => {
           sidebar.classList.toggle("ocultar");
       });
   }
+
+
+  var miModal = document.getElementById('exampleModal') // relatedTarget
+  
+
+  setTimeout(jQuery(miModal).modal("show"), 2000);
+
 
 });
