@@ -83,7 +83,7 @@ a{
     pointer-events: none;
     position: absolute;
 }
-.show{
+.show1{
     opacity: 1!important;
     pointer-events: all!important;
     transition: all;
@@ -186,16 +186,16 @@ a{
 
 /* componente 4 */
 
-input:focus{
+.comp4 input:focus{
     box-shadow: none!important;
 }
- .login span, .login input{
+.comp4 .login span, .login input{
     border: solid 2px #072f35!important;
 }
-.input-group span{
+.comp4 .input-group span{
     border-radius: 10px 0 0 10px!important;
 }
-.input-group input{
+.comp4 .input-group input{
     border-radius: 0 10px 10px 0!important;
 }
 .logo-btn a{
@@ -264,14 +264,14 @@ input:focus{
  /* Componente 10 */
 
 
-#estado{
-    background-color: red;
-    opacity: 1;
+.estado{
+    background-color: red!important;
+    opacity: 1!important;
     box-shadow: none;
 
 }
-#estado:checked{
-    background-color: #008c45;
+.estado:checked{
+    background-color: #008c45!important;
 }
 
 
@@ -396,4 +396,19 @@ input:focus{
 }
 .comp22 input + label{
     opacity: 1!important;
+}
+
+
+/* Modal */
+
+.tecnologias span {
+    padding: 5px 15px;
+    border-radius: 50px;
+    background-color: #002f34;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 15px;
+}
+.tecnologias {
+    margin-bottom: 10px;
 }
